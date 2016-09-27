@@ -1,0 +1,240 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Contact Us</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="180" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Name,Email_Address,Subject,Comments,Security_Code">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" id="table2" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%% id="table3">
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table14">
+			<tr>
+				<td width="70%">
+				<p align="right">Contact Us&nbsp;&nbsp;&nbsp;
+				</td>
+				<td>
+				<img border="0" src="templates/deco/mail_pic.gif" width="27" height="21"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+<tr>
+	<td width="20">%%required_image_star%%</td>
+	<td colspan="2"><p align="left">Name:</td>
+    </tr>
+
+<tr>
+	<td width="20">&nbsp;</td>
+	<td><font face="Verdana">
+	<input name="Name" maxlength="50" size="17" value="%%Name%%"></font></td>
+	<td>&nbsp;%%Name_Required%%</td>
+    </tr>
+
+<tr>
+	<td width="20">&nbsp;</td>
+	<td colspan="2"><p align="left">Phone:</td>
+    </tr>
+
+<tr>
+	<td width="20">&nbsp;</td>
+	<td colspan="2"><font face="Verdana">
+				<input name="Contact_Phone" maxlength="50" size="17" value="%%Contact_Phone%%"></font></td>
+    </tr>
+
+    <tr>
+	<td width="20">%%required_image_star%%</td>
+	<td colspan="2"><p align="left">Email:</td>
+    </tr>
+
+    <tr>
+	<td width="20">
+	<p align="right">&nbsp;</td>
+	<td><font face="Verdana">
+	<input name="Email_Address" maxlength="50" size="17" value="%%Email_Address%%"></font></td>
+	<td>&nbsp;%%Email_Address_Required%%</td>
+    </tr>
+
+    <tr>
+	<td width="20">%%required_image_star%%</td>
+	<td colspan="2"><p align="left">Subject:</td>
+    </tr>
+
+    <tr>
+	<td width="20">
+	<p align="right">&nbsp;</td>
+	<td><font face="Verdana">
+	<input name="Subject" maxlength="50" size="17" value="%%Subject%%"></font> </td>
+	<td>
+	&nbsp;%%Subject_Required%%</td>
+    </tr>
+
+    <tr>
+	<td width="20">
+%%required_image_star%%</td>
+	<td><p align="left">
+      Message:</td>
+	<td>
+	&nbsp;</td>
+    </tr>
+
+    <tr>
+	<td width="20">
+&nbsp;</td>
+	<td><font face="Verdana">
+		<textarea name="Comments"  cols="13" rows="4">%%Comments%%</textarea></font></td>
+	<td valign="top">
+	&nbsp;%%Comments_Required%%</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%></font> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3" valign="top"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3"><font face="Verdana">
+		<input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<p align="left"><font size="1">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		&nbsp; <br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

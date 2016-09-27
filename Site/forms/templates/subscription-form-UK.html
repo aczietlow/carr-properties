@@ -1,0 +1,445 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-uk">
+
+<title>Subscription Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; AddDefaultCharset ISO-8859-1">
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Business_Name,Contact_Name,Daytime_Phone,Evening_Phone,Email_Address,Subscription_Plan,Method_Of_Payment,Security_Code">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center"><p align="center">Subscription Form</td>
+    </tr>
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="10">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Business Name:&nbsp; </td>
+				<td>
+				<input name="Business_Name" maxlength="50" size="22" value="%%Business_Name%%">
+				%%Business_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table3">
+			<tr>
+				<td width="10">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Contact Name:&nbsp; </td>
+				<td>
+				<input name="Contact_Name" maxlength="50" size="22" value="%%Contact_Name%%">
+				%%Contact_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="50" valign="top">&nbsp;<br>
+				%%required_image_star%%</td>
+				<td valign="top" colspan="2"><p align="left">&nbsp;<br>
+	<b>Type Of Subscription Plan</b>:&nbsp; %%Subscription_Plan_Required%%<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top"><p align="left">
+				Plan A:&nbsp;</td>
+				<td><p align="left">
+	<input type="radio" name="Subscription_Plan" value="9.95" %%Subscription_Plan_9.95_selected%%> 
+	£9.95
+				</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top"><p align="left">Plan B:&nbsp;</td>
+				<td><p align="left">
+	<input type="radio" name="Subscription_Plan" value="19.95" %%Subscription_Plan_19.95_selected%%> 
+	£19.95</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top"><p align="left">Plan C:&nbsp;</td>
+				<td><p align="left">
+	<input type="radio" name="Subscription_Plan" value="29.95" %%Subscription_Plan_29.95_selected%%> 
+	£29.95</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top"><p align="left">Plan D:&nbsp;</td>
+				<td><p align="left">
+	<input type="radio" name="Subscription_Plan" value="39.95" %%Subscription_Plan_39.95_selected%%> 
+	£39.95</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top"><p align="left">Plan E:&nbsp;</td>
+				<td><p align="left">
+	<input type="radio" name="Subscription_Plan" value="49.95" %%Subscription_Plan_49.95_selected%%> 
+	£49.95</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top"><p align="left">Plan F:&nbsp;</td>
+				<td><p align="left">
+	<input type="radio" name="Subscription_Plan" value="64.95" %%Subscription_Plan_64.95_selected%%> 
+	£64.95 
+	</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top">
+				&nbsp;</td>
+				<td><p align="left">
+	<input type="radio" name="Subscription_Plan" value="Other" %%Subscription_Plan_Other_selected%%>
+	Other amount <br>&nbsp;&nbsp;&nbsp; &gt; enter in 
+	comments</td>
+			</tr>
+			<tr>
+				<td width="50" valign="top">&nbsp;</td>
+				<td width="60" valign="top">
+				&nbsp;</td>
+				<td>
+	&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="150">
+				<p align="right">Payment
+				Method:&nbsp; </td>
+				<td><p align="left">
+				<input type="radio" name="Method_Of_Payment" value="Mastercard_Visa" %%Mastercard_Visa_Selected%%> Mastercard/Visa<br>
+				<input type="radio" name="Method_Of_Payment" value="Mail_Check" %%Mail_Check_Selected%%> Mail A Check<br>
+				<input type="radio" name="Method_Of_Payment" value="PayPal" %%PayPal_Selected%%> PayPal</td>
+				<td>
+				%%Method_Of_Payment_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table5">
+			<tr>
+				<td width="10"></td>
+				<td width="120">
+				<p align="right">Address:&nbsp; </td>
+				<td><input name="Address" maxlength="50" size="22" value="%%Address%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table5">
+			<tr>
+				<td width="10"></td>
+				<td width="120">
+				<p align="right">Town/City:&nbsp; </td>
+				<td><input name="Town_City" maxlength="50" size="22" value="%%Town_City%%"></td>
+			</tr>
+		</table>
+		</td>
+    
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table7">
+			<tr>
+				<td width="10"></td>
+				<td width="120">
+				<p align="right">Postcode:&nbsp; </td>
+				<td><input name="Postcode" maxlength="50" size="22" value="%%Postcode%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="10">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Daytime phone:&nbsp; </td>
+				<td>
+				<input name="Daytime Phone" maxlength="50" size="15" value="%%Daytime_Phone%%">
+				%%Daytime_Phone_Required%%</td>
+			</tr>
+			<tr>
+				<td width="10" height="32">&nbsp;</td>
+				<td width="120" height="32">
+				<p align="right">Mobile phone:&nbsp;</td>
+				<td height="32">
+<font face="Verdana">
+				<input name="Mobile Phone" maxlength="50" size="15" value="%%Mobile_Phone%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="10">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Evening phone:&nbsp; </td>
+				<td>
+				<input name="Evening_Phone" maxlength="50" size="15" value="%%Evening_Phone%%">
+				%%Evening_Phone_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="10">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Email Address:&nbsp; </td>
+				<td><input name="Email_Address" maxlength="50" size="22" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td colspan="2">&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="10"></td>
+				<td width="120">
+				<p align="right">How Did You &nbsp;
+				<br>
+				Hear About Us?&nbsp; </td>
+				<td><select name="How_Did_You_Hear_About_Us">
+			<option value="none_chosen" >Select From List &darr;</option>
+		<option value="Web - Search Engine" %%How_Did_You_Hear_About_Us_Web_-_Search_Engine_selected%%>Web - Search Engine</option>
+        <option value="Direct Mail" %%How_Did_You_Hear_About_Us_Direct_Mail_selected%%>Direct Mail</option>
+        <option value="TV" %%How_Did_You_Hear_About_Us_TV_selected%%>TV</option>
+        <option value="Radio" %%How_Did_You_Hear_About_Us_Radio_selected%%>Radio</option>
+        <option value="Newspaper" %%How_Did_You_Hear_About_Us_Newspaper_selected%%>Newspaper</option>
+        <option value="Referral" %%How_Did_You_Hear_About_Us_Referral_selected%%>Referral</option>
+        <option value="Other" %%How_Did_You_Hear_About_Us_Other_selected%%>Other</option>
+       </select></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+				<td valign="top" width="50">&nbsp;</td>
+				<td><p align="left">
+      &nbsp;<br>
+		Comments:</td>
+			</tr>
+			<tr>
+				<td valign="top" width="50"><p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table27">
+       <tr>
+        <td><textarea name="Comments"  cols="28" rows="8">%%Comments%%</textarea></td>
+        <td valign="top"></td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

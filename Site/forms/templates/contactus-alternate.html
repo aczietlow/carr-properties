@@ -1,0 +1,318 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Contact Us</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Subject,Email_Address,Name,Security_Code,Comments">
+
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" id="table2" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%% id="table3">
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table28">
+			<tr>
+				<td width="60%">
+				<p align="right">Contact Us&nbsp;&nbsp;&nbsp;
+				</td>
+				<td>
+				<img border="0" src="templates/deco/mail_pic.gif" width="27" height="21"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Name:&nbsp; </td>
+				<td>
+				<input name="Name" maxlength="50" size="25" value="%%Name%%">
+				%%Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table21">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Subject:&nbsp; </td>
+				<td>
+				<input name="Subject" maxlength="50" size="25" value="%%Subject%%">
+				%%Subject_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table22">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Email:&nbsp; </td>
+				<td>
+				<input name="Email_Address" maxlength="50" size="25" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table25">
+			<tr>
+				<td colspan="2"><font size="1">&nbsp; </font> </td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">
+				Contact phone:</td>
+				<td width="55%"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td align="center">
+<font face="Verdana">
+				<p><input name="Contact_Phone" maxlength="50" size="15" value="%%Contact_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Best_Contact_Time">
+			<option value=''></option>
+			<option value='All_Day' %%Best_Contact_Time_All_Day_Selected%%>All Day</option>
+			<option value='8am_to_10am' %%Best_Contact_Time_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Best_Contact_Time_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Best_Contact_Time_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Best_Contact_Time_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Best_Contact_Time_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Best_Contact_Time_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Best_Contact_Time_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Best_Contact_Time_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			<option value='Evening' %%Best_Contact_Time_Evening_Selected%%>Evening</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><font size="1">&nbsp;</font></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">Alternate phone:</td>
+				<td width="55%"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">
+				<input name="Alternate_Phone" maxlength="50" size="15" value="%%Alternate_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Best_Contact_Time_Alternate">
+			<option value=''></option>
+			<option value='Evening' %%Best_Contact_Time_Alternate_Evening_Selected%%>Evening</option>
+			<option value='8am_to_10am' %%Best_Contact_Time_Alternate_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Best_Contact_Time_Alternate_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Best_Contact_Time_Alternate_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Best_Contact_Time_Alternate_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Best_Contact_Time_Alternate_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Best_Contact_Time_Alternate_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Best_Contact_Time_Alternate_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Best_Contact_Time_Alternate_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<font size="1">&nbsp;</font></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+				<td valign="top" width="30">&nbsp;</td>
+				<td><p align="left">
+		Comments:</td>
+			</tr>
+			<tr>
+				<td valign="top" width="30">%%required_image_star%%<p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table27">
+       <tr>
+        <td><textarea name="Comments"  cols="30" rows="8">%%Comments%%</textarea></td>
+        <td valign="top">
+          &nbsp;%%Comments_Required%%</td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp; </td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></font></td>
+    </tr>
+
+    <tr>
+     <td><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+	
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

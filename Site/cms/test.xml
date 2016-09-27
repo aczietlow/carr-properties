@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<!--</properties> -->
+	<property type="Residental" uid="001"><title>My House</title><address><street>516 Oak Creek</street><city>North Augusta</city><state>SC</state><zip>29801</zip></address><lease><perMonth>1550</perMonth><perSqFt>150</perSqFt></lease><features><f>big </f><f>clean</f><f>cool</f></features><pictures><picture>img/</picture><picture>images/pic2.jpg</picture></pictures><floorPlans><fp>images/flPl1.jpg</fp><fp>images/flPl2.jpg</fp></floorPlans></property>
+	
+	<property type="Education" uid="002">
+		<title>Dorm Building</title>
+		<address>
+			<street>2A Pacer Cmns</street>
+			<city>Aiken</city>
+			<state>SC</state>
+			<zip>29801</zip>
+		</address>
+		<lease>
+			<perMonth>25000</perMonth>
+			<perSqFt>25</perSqFt>
+		</lease>
+		<features>
+			<f>lots of people</f>
+			<f>small</f>
+			<f>full kitchen</f>
+			<f>single or double rooms</f>
+		</features>
+		<pictures>
+			<picture>images/pic1.jpg</picture>
+			<picture>images/pic2.jpg</picture>
+		</pictures>
+		<floorPlans>
+			<fp>images/flPl1.jpg</fp>
+			<fp>images/flPl2.jpg</fp>
+		</floorPlans>
+	</property><property type="Commercial" uid="3"><title>Test-o-Roma</title><address><street>200 WTF Dr</street><city>STFU</city><state>GA</state><zip>12345</zip></address><lease><perMonth>2000</perMonth><perSqFt>150</perSqFt></lease><features><f>Mine Shaft</f></features><pictures><picture>img/3picture1.jpg</picture></pictures><floorPlans><fp>img/3FlPl1.jpg</fp></floorPlans></property></properties>

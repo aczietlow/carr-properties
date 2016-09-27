@@ -1,0 +1,391 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Property Search Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Country,Location,Property_Type,Bedrooms,Bathrooms,Weekly_Rental,Suitable_For,Activities,Special_Requirements,Name,Email_Address,Security_Code">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table13">
+			<tr>
+				<td width="70%">
+				<p align="right">Vacation Property 
+				Wanted&nbsp;&nbsp;&nbsp;
+				</td>
+				<td>
+				<img border="0" src="templates/deco/home_icon.gif" width="40" height="40"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Country:&nbsp; </td>
+				<td><input name="Country" maxlength="50" size="20" value="%%Country%%">
+				%%Country_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table3">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Location:&nbsp; </td>
+				<td><input name="Location" maxlength="50" size="20" value="%%Location%%">
+				%%Location_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table4">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Property Type:&nbsp; </td>
+				<td><input name="Property_Type" maxlength="50" size="20" value="%%Property_Type%%">
+				%%Property_Type_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table5">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Bedrooms:&nbsp; </td>
+				<td>
+	<font face="Verdana">
+	<select name='Bedrooms'>
+	<option value=''></option>
+	<option value='One' %%Bedrooms_One_Selected%%>One</option>
+	<option value='Two' %%Bedrooms_Two_Selected%%>Two</option>
+	<option value='Three' %%Bedrooms_Three_Selected%%>Three</option>
+	<option value='Four' %%Bedrooms_Four_Selected%%>Four</option>
+	<option value='Five' %%Bedrooms_Five_Selected%%>Five</option>
+	</select></font>
+	%%Bedrooms_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Bathrooms:&nbsp; </td>
+				<td>
+	<font face="Verdana">
+	<select name='Bathrooms'>
+	<option value=''></option>
+	<option value='One' %%Bathrooms_One_Selected%%>One</option>
+	<option value='Two' %%Bathrooms_Two_Selected%%>Two</option>
+	<option value='Three' %%Bathrooms_Three_Selected%%>Three</option>
+	</select></font>
+	%%Bathrooms_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table7">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Weekly Rental:&nbsp; </td>
+				<td><input name="Weekly_Rental" maxlength="50" size="20" value="%%Weekly_Rental%%">
+				%%Weekly_Rental_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="120">
+				&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5" valign="top">%%required_image_star%%</td>
+				<td width="120" valign="top">
+				<p align="right">Suitable For:&nbsp; </td>
+				<td>
+	<font face="Verdana"><p align="left">
+	<input type="checkbox" name="Suitable_For_1" value="Children" %%Suitable_For_1_Children_selected%%></font>Children<br>
+	<input type="checkbox" name="Suitable_For_2" value="Couples" %%Suitable_For_2_Couples_selected%%>Couples<br>
+	<input type="checkbox" name="Suitable_For_3" value="Disabled" %%Suitable_For_3_Disabled_selected%%>Disabled<br>
+	<input type="checkbox" name="Suitable_For_4" value="Private" %%Suitable_For_4_Private_selected%%>Private<br>
+	<input type="checkbox" name="Suitable_For_5" value="Winter Holidays" %%Suitable_For_5_Winter_Holidays_selected%%>Winter Holidays<br>
+	<input type="checkbox" name="Suitable_For_6" value="Pets Allowed" %%Suitable_For_6_Pets_Allowed_selected%%>Pets Allowed</font></td>
+				<td>%%Suitable_For_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="120" valign="top">
+				&nbsp;</td>
+				<td width="147">
+	&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5" valign="top">%%required_image_star%%</td>
+				<td width="120" valign="top">
+				<p align="right">Activities:&nbsp; </td>
+				<td>
+	<font face="Verdana"><p align="left">
+	<input type="checkbox" name="Activities_1" value="Fishing" %%Activities_1_Fishing_selected%%></font>Fishing<br>
+	<input type="checkbox" name="Activities_2" value="Scuba Diving" %%Activities_2_Scuba_Diving_selected%%>Scuba Diving<br>
+	<input type="checkbox" name="Activities_3" value="Golfing" %%Activities_3_Golfing_selected%%>Golfing<br>
+	<input type="checkbox" name="Activities_4" value="Surfing" %%Activities_4_Surfing_selected%%>Surfing<br>
+	<input type="checkbox" name="Activities_5" value="Horse Riding" %%Activities_5_Horse_Riding_selected%%>Horse Riding<br>
+	<input type="checkbox" name="Activities_6" value="Skiing" %%Activities_6_Skiing_selected%%>Skiing</font></td>
+				<td>%%Activities_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="left">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table12">
+			<tr>
+				<td width="50">&nbsp;</td>
+				<td>&nbsp;<br><p align="left">
+				Special&nbsp;Requirements:</td>
+				<td valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="50">%%required_image_star%%<p align="right">
+				&nbsp; </td>
+				<td>
+				<textarea name="Special_Requirements"  cols="28" rows="6">%%Special_Requirements%%</textarea></td>
+				<td valign="top">
+				%%Special_Requirements_Required%%</td>
+			</tr>
+			<tr>
+				<td width="50">&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Name:&nbsp; </td>
+				<td><input name="Name" maxlength="50" size="20" value="%%Name%%">
+				%%Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Email:&nbsp; </td>
+				<td><input name="Email_Address" maxlength="50" size="20" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

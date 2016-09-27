@@ -1,0 +1,1069 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Auto Shipping Order Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+<script language="JavaScript" src="./ts_picker.js">
+
+
+</script>
+
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Email_Address,First_Name,Last_Name,Contact_Phone,Address,City,State,Zip,Vehicles,Vehicle_1,From_Date,To_Date,Origin_First_Name,Origin_Last_Name,Origin_City,Origin_State,Origin_Zip,Origin_Contact_Phone,Destination_First_Name,Destination_Last_Name,Destination_City,Destination_State,Destination_Zip,Destination_Contact_Phone,Security_Code">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" id="table2" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%% id="table3">
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table28">
+			<tr>
+				<td align="center"><p align="center">
+				<b>Auto Shipping Order Form</b></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">First Name:&nbsp; </td>
+				<td>
+				<input name="First_Name" maxlength="50" size="25" value="%%First_Name%%"> 
+				%%First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table24">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Last Name:&nbsp; </td>
+				<td>
+				<input name="Last_Name" maxlength="50" size="25" value="%%Last_Name%%">
+				%%Last_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Address:&nbsp; </td>
+				<td>
+				<input name="Address" maxlength="50" size="25" value="%%Address%%">
+				%%Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">City:&nbsp; </td>
+				<td>
+				<input name="City" maxlength="50" size="25" value="%%City%%">
+				%%City_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">State:&nbsp; </td>
+				<td><font face="Verdana"><select name="State">
+   <option value=""></option>
+   <option value="AL" %%AL_Selected%%>Alabama</option>
+   <option value="AK" %%AK_Selected%%>Alaska</option>
+   <option value="AZ" %%AZ_Selected%%>Arizona</option>
+   <option value="AR" %%AR_Selected%%>Arkansas</option>
+   <option value="CA" %%CA_Selected%%>California</option>
+   <option value="CO" %%CO_Selected%%>Colorado</option>
+   <option value="CT" %%CT_Selected%%>Connecticut</option>
+   <option value="DC" %%DC_Selected%%>District of Columbia</option>
+   <option value="DE" %%DE_Selected%%>Delaware</option>
+   <option value="FL" %%FL_Selected%%>Florida</option>
+   <option value="GA" %%GA_Selected%%>Georgia</option>
+   <option value="HI" %%HI_Selected%%>Hawaii</option>
+   <option value="ID" %%ID_Selected%%>Idaho</option>
+   <option value="IL" %%IL_Selected%%>Illinois</option>
+   <option value="IN" %%IN_Selected%%>Indiana</option>
+   <option value="IA" %%IA_Selected%%>Iowa</option>
+   <option value="KS" %%KS_Selected%%>Kansas</option>
+   <option value="KY" %%KY_Selected%%>Kentucky</option>
+   <option value="LA" %%LA_Selected%%>Louisiana</option>
+   <option value="ME" %%ME_Selected%%>Maine</option>
+   <option value="MD" %%MD_Selected%%>Maryland</option>
+   <option value="MA" %%MA_Selected%%>Massachusetts</option>
+   <option value="MI" %%MI_Selected%%>Michigan</option>
+   <option value="MN" %%MN_Selected%%>Minnesota</option>
+   <option value="MS" %%MS_Selected%%>Mississippi</option>
+   <option value="MO" %%MO_Selected%%>Missouri</option>
+   <option value="MT" %%MT_Selected%%>Montana</option>
+   <option value="NE" %%NE_Selected%%>Nebraska</option>
+   <option value="NV" %%NV_Selected%%>Nevada</option>
+   <option value="NH" %%NH_Selected%%>New Hampshire</option>
+   <option value="NJ" %%NJ_Selected%%>New Jersey</option>
+   <option value="NM" %%NM_Selected%%>New Mexico</option>
+   <option value="NY" %%NY_Selected%%>New York</option>
+   <option value="NC" %%NC_Selected%%>North Carolina</option>
+   <option value="ND" %%ND_Selected%%>North Dakota</option>
+   <option value="OH" %%OH_Selected%%>Ohio</option>
+   <option value="OK" %%OK_Selected%%>Oklahoma</option>
+   <option value="OR" %%OR_Selected%%>Oregon</option>
+   <option value="PA" %%PA_Selected%%>Pennsylvania</option>
+   <option value="PR" %%PR_Selected%%>Puerto Rico</option>
+   <option value="RI" %%RI_Selected%%>Rhode Island</option>
+   <option value="SC" %%SC_Selected%%>South Carolina</option>
+   <option value="SD" %%SD_Selected%%>South Dakota</option>
+   <option value="TN" %%TN_Selected%%>Tennessee</option>
+   <option value="TX" %%TX_Selected%%>Texas</option>
+   <option value="UT" %%UT_Selected%%>Utah</option>
+   <option value="VT" %%VT_Selected%%>Vermont</option>
+   <option value="VA" %%VA_Selected%%>Virginia</option>
+   <option value="WA" %%WA_Selected%%>Washington</option>
+   <option value="WV" %%WV_Selected%%>West Virginia</option>
+   <option value="WI" %%WI_Selected%%>Wisconsin</option>
+   <option value="WY" %%WY_Selected%%>Wyoming</option>
+  </select></font>
+  %%State_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Zip:&nbsp; </td>
+				<td>
+				<input name="Zip" maxlength="50" size="10" value="%%Zip%%">
+				%%Zip_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table25">
+			<tr>
+				<td colspan="2"><font size="1">&nbsp; </font> </td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">
+				Contact phone:</td>
+				<td width="55%"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td align="center">
+<font face="Verdana">
+				<p><input name="Contact_Phone" maxlength="50" size="15" value="%%Contact_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Best_Contact_Time">
+			<option value=''></option>
+			<option value='All_Day' %%Best_Contact_Time_All_Day_Selected%%>All Day</option>
+			<option value='8am_to_10am' %%Best_Contact_Time_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Best_Contact_Time_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Best_Contact_Time_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Best_Contact_Time_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Best_Contact_Time_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Best_Contact_Time_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Best_Contact_Time_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Best_Contact_Time_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			<option value='Evening' %%Best_Contact_Time_Evening_Selected%%>Evening</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><font size="1">&nbsp;</font></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">Alternate phone:</td>
+				<td width="55%"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">
+				<input name="Alternate_Phone" maxlength="50" size="15" value="%%Alternate_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Best_Contact_Time_Alternate">
+			<option value=''></option>
+			<option value='Evening' %%Best_Contact_Time_Alternate_Evening_Selected%%>Evening</option>
+			<option value='8am_to_10am' %%Best_Contact_Time_Alternate_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Best_Contact_Time_Alternate_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Best_Contact_Time_Alternate_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Best_Contact_Time_Alternate_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Best_Contact_Time_Alternate_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Best_Contact_Time_Alternate_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Best_Contact_Time_Alternate_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Best_Contact_Time_Alternate_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<font size="1">&nbsp;</font></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table22">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Your Email:&nbsp; </td>
+				<td>
+				<input name="Email_Address" maxlength="50" size="25" value="%%Email_Address%%"> 
+				%%Email_Address_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="100">
+				&nbsp;</td>
+				<td>
+				&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+			<td width="10">%%required_image_star%%</td>
+				<td width="192">
+				<p align="right">Number of 
+				Vehicles:&nbsp; </td>
+				<td><select name="Vehicles">
+   <option value=""></option>
+   <option value="1" %%Vehicles_1_Selected%%>1</option>
+   <option value="2" %%Vehicles_2_Selected%%>2</option>
+   <option value="3" %%Vehicles_3_Selected%%>3</option>
+   <option value="4" %%Vehicles_4_Selected%%>4</option>
+   <option value="5" %%Vehicles_5_Selected%%>5</option>
+   <option value="6" %%Vehicles_6_Selected%%>6</option>
+   <option value="7" %%Vehicles_7_Selected%%>7</option>
+   <option value="8" %%Vehicles_8_Selected%%>8</option>
+   <option value="9" %%Vehicles_9_Selected%%>9</option>
+   <option value="10" %%Vehicles_10_Selected%%>10</option>
+   <option value="11" %%Vehicles_11_Selected%%>11</option>
+   <option value="12" %%Vehicles_12_Selected%%>12</option>
+   <option value="13" %%Vehicles_13_Selected%%>13</option>
+   <option value="14" %%Vehicles_14_Selected%%>14</option>
+   <option value="15" %%Vehicles_15_Selected%%>15</option>
+   <option value="16" %%Vehicles_16_Selected%%>16</option>
+   <option value="17" %%Vehicles_17_Selected%%>17</option>
+   <option value="18" %%Vehicles_18_Selected%%>18</option>
+   <option value="19" %%Vehicles_19_Selected%%>19</option>
+   <option value="20" %%Vehicles_20_Selected%%>20</option>
+   </select>
+  %%Vehicles_Required%%
+  </td>
+			</tr>
+			<tr>
+			<td width="10">&nbsp;</td>
+				<td width="192">
+				&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Vehicle #1:&nbsp; </td>
+				<td>
+				<input name="Vehicle_1" maxlength="50" size="25" value="%%Vehicle_1%%">
+				%%Vehicle_1_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="100">
+				&nbsp;</td>
+				<td><p align="left">
+				&nbsp;&nbsp;&nbsp; year, make, 
+				model</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="105">
+				<p align="right">Vehicle #2:&nbsp; </td>
+				<td>
+				<input name="Vehicle_2" maxlength="50" size="25" value="%%Vehicle_2%%">
+				</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+				<td valign="top" width="30">&nbsp;</td>
+				<td><p align="left">
+      &nbsp;<br>For shipments greater 
+		than two vehicles, list them in the field below:</td>
+			</tr>
+			<tr>
+				<td valign="top" width="30">&nbsp;<p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table27">
+       <tr>
+        <td><textarea name="Vehicle_List"  cols="30" rows="6">%%Vehicle_List%%</textarea></td>
+        <td valign="top">
+        </td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table12">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="2"><p align="center">&nbsp;<br>
+				<b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Type in Your Available 
+				<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dates for Shipment</b>:<br>
+				</td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">From Date:&nbsp; </td>
+				<td>
+				<input name="From_Date" maxlength="50" size="10" value="%%From_Date%%"> <a href="javascript:show_calendar('document.forms[0].From_Date', document.forms[0].From_Date.value);"><img src="templates/deco/cal.gif" width="16" height="16" border="0" alt="Click Here to Pick up the date"></a>
+				%%From_Date_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">To Date:&nbsp; </td>
+				<td>
+				<input name="To_Date" maxlength="50" size="10" value="%%To_Date%%"> <a href="javascript:show_calendar('document.forms[0].To_Date', document.forms[0].To_Date.value);"><img src="templates/deco/cal.gif" width="16" height="16" border="0" alt="Click Here to Pick up the date"></a>
+				%%To_Date_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="2"><p align="center"><b>
+				&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Origin Information</b><br>
+				</td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">First Name:&nbsp; </td>
+				<td>
+				<input name="Origin_First_Name" maxlength="50" size="25" value="%%Origin_First_Name%%"> 
+				%%Origin_First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table24">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Last Name:&nbsp; </td>
+				<td>
+				<input name="Origin_Last_Name" maxlength="50" size="25" value="%%Origin_Last_Name%%">
+				%%Origin_Last_Name_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5" height="32">&nbsp;</td>
+				<td width="100" height="32">
+				<p align="right">Address:&nbsp; </td>
+				<td height="32">
+<font face="Verdana">
+				<input name="Origin_Address" maxlength="50" size="25" value="%%Origin_Address%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">City:&nbsp; </td>
+				<td>
+				<input name="Origin_City" maxlength="50" size="25" value="%%Origin_City%%">
+				%%Origin_City_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">State:&nbsp; </td>
+				<td><font face="Verdana"><select name="Origin_State">
+   <option value=""></option>
+   <option value="AL" %%Origin_State_AL_Selected%%>Alabama</option>
+   <option value="AK" %%Origin_State_AK_Selected%%>Alaska</option>
+   <option value="AZ" %%Origin_State_AZ_Selected%%>Arizona</option>
+   <option value="AR" %%Origin_State_AR_Selected%%>Arkansas</option>
+   <option value="CA" %%Origin_State_CA_Selected%%>California</option>
+   <option value="CO" %%Origin_State_CO_Selected%%>Colorado</option>
+   <option value="CT" %%Origin_State_CT_Selected%%>Connecticut</option>
+   <option value="DC" %%Origin_State_DC_Selected%%>District of Columbia</option>
+   <option value="DE" %%Origin_State_DE_Selected%%>Delaware</option>
+   <option value="FL" %%Origin_State_FL_Selected%%>Florida</option>
+   <option value="GA" %%Origin_State_GA_Selected%%>Georgia</option>
+   <option value="HI" %%Origin_State_HI_Selected%%>Hawaii</option>
+   <option value="ID" %%Origin_State_ID_Selected%%>Idaho</option>
+   <option value="IL" %%Origin_State_IL_Selected%%>Illinois</option>
+   <option value="IN" %%Origin_State_IN_Selected%%>Indiana</option>
+   <option value="IA" %%Origin_State_IA_Selected%%>Iowa</option>
+   <option value="KS" %%Origin_State_KS_Selected%%>Kansas</option>
+   <option value="KY" %%Origin_State_KY_Selected%%>Kentucky</option>
+   <option value="LA" %%Origin_State_LA_Selected%%>Louisiana</option>
+   <option value="ME" %%Origin_State_ME_Selected%%>Maine</option>
+   <option value="MD" %%Origin_State_MD_Selected%%>Maryland</option>
+   <option value="MA" %%Origin_State_MA_Selected%%>Massachusetts</option>
+   <option value="MI" %%Origin_State_MI_Selected%%>Michigan</option>
+   <option value="MN" %%Origin_State_MN_Selected%%>Minnesota</option>
+   <option value="MS" %%Origin_State_MS_Selected%%>Mississippi</option>
+   <option value="MO" %%Origin_State_MO_Selected%%>Missouri</option>
+   <option value="MT" %%Origin_State_MT_Selected%%>Montana</option>
+   <option value="NE" %%Origin_State_NE_Selected%%>Nebraska</option>
+   <option value="NV" %%Origin_State_NV_Selected%%>Nevada</option>
+   <option value="NH" %%Origin_State_NH_Selected%%>New Hampshire</option>
+   <option value="NJ" %%Origin_State_NJ_Selected%%>New Jersey</option>
+   <option value="NM" %%Origin_State_NM_Selected%%>New Mexico</option>
+   <option value="NY" %%Origin_State_NY_Selected%%>New York</option>
+   <option value="NC" %%Origin_State_NC_Selected%%>North Carolina</option>
+   <option value="ND" %%Origin_State_ND_Selected%%>North Dakota</option>
+   <option value="OH" %%Origin_State_OH_Selected%%>Ohio</option>
+   <option value="OK" %%Origin_State_OK_Selected%%>Oklahoma</option>
+   <option value="OR" %%Origin_State_OR_Selected%%>Oregon</option>
+   <option value="PA" %%Origin_State_PA_Selected%%>Pennsylvania</option>
+   <option value="PR" %%Origin_State_PR_Selected%%>Puerto Rico</option>
+   <option value="RI" %%Origin_State_RI_Selected%%>Rhode Island</option>
+   <option value="SC" %%Origin_State_SC_Selected%%>South Carolina</option>
+   <option value="SD" %%Origin_State_SD_Selected%%>South Dakota</option>
+   <option value="TN" %%Origin_State_TN_Selected%%>Tennessee</option>
+   <option value="TX" %%Origin_State_TX_Selected%%>Texas</option>
+   <option value="UT" %%Origin_State_UT_Selected%%>Utah</option>
+   <option value="VT" %%Origin_State_VT_Selected%%>Vermont</option>
+   <option value="VA" %%Origin_State_VA_Selected%%>Virginia</option>
+   <option value="WA" %%Origin_State_WA_Selected%%>Washington</option>
+   <option value="WV" %%Origin_State_WV_Selected%%>West Virginia</option>
+   <option value="WI" %%Origin_State_WI_Selected%%>Wisconsin</option>
+   <option value="WY" %%Origin_State_WY_Selected%%>Wyoming</option>
+  </select></font>
+  %%Origin_State_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Zip:&nbsp; </td>
+				<td>
+				<input name="Origin_Zip" maxlength="50" size="10" value="%%Origin_Zip%%">
+				%%Origin_Zip_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table25">
+			<tr>
+				<td colspan="4">&nbsp; </td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center"><p align="center">Contact phone: %%Origin_Contact_Phone_Required%%</td>
+				<td width="55%" align="center"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="10">
+				<p align="right">&nbsp; </td>
+				<td width="45%" align="center">
+				<input name="Origin_Contact_Phone" maxlength="50" size="15" value="%%Origin_Contact_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Origin_Best_Contact_Time">
+			<option value=''></option>
+			<option value='All_Day' %%Origin_Best_Contact_Time_All_Day_Selected%%>All Day</option>
+			<option value='8am_to_10am' %%Origin_Best_Contact_Time_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Origin_Best_Contact_Time_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Origin_Best_Contact_Time_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Origin_Best_Contact_Time_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Origin_Best_Contact_Time_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Origin_Best_Contact_Time_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Origin_Best_Contact_Time_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Origin_Best_Contact_Time_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			<option value='Evening' %%Origin_Best_Contact_Time_Evening_Selected%%>Evening</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center">
+				&nbsp;</td>
+				<td width="55%" align="center">
+ 			&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center"><p align="center">
+				Alternate phone:</td>
+				<td width="55%" align="center"><p align="center">
+ 				Best time to call:</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center">
+<font face="Verdana">
+				<input name="Origin_Alternate_Phone" maxlength="50" size="15" value="%%Origin_Alternate_Phone%%"></td>
+				<td width="55%" align="center">
+<font face="Verdana">
+ 			<select name="Origin_Best_Contact_Time_Alternate">
+			<option value=''></option>
+			<option value='Evening' %%Origin_Best_Contact_Time_Alternate_Evening_Selected%%>Evening</option>
+			<option value='8am_to_10am' %%Origin_Best_Contact_Time_Alternate_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Origin_Best_Contact_Time_Alternate_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Origin_Best_Contact_Time_Alternate_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Origin_Best_Contact_Time_Alternate_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Origin_Best_Contact_Time_Alternate_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Origin_Best_Contact_Time_Alternate_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Origin_Best_Contact_Time_Alternate_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Origin_Best_Contact_Time_Alternate_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table22">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="105">
+				<p align="right">Email:&nbsp; </td>
+				<td>
+				<input name="Origin_Email_Address" maxlength="50" size="25" value="%%Origin_Email_Address%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="2"><p align="center">
+				<b>
+				&nbsp;<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Destination Information</b><br>
+				</td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">First Name:&nbsp; </td>
+				<td>
+				<input name="Destination_First_Name" maxlength="50" size="25" value="%%Destination_First_Name%%"> 
+				%%Destination_First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table24">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Last Name:&nbsp; </td>
+				<td>
+				<input name="Destination_Last_Name" maxlength="50" size="25" value="%%Destination_Last_Name%%">
+				%%Destination_Last_Name_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5" height="32">&nbsp;</td>
+				<td width="100" height="32">
+				<p align="right">Address:&nbsp; </td>
+				<td height="32">
+<font face="Verdana">
+				<input name="Destination_Address" maxlength="50" size="25" value="%%Destination_Address%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">City:&nbsp; </td>
+				<td>
+				<input name="Destination_City" maxlength="50" size="25" value="%%Destination_City%%">
+				%%Destination_City_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">State:&nbsp; </td>
+				<td><font face="Verdana"><select name="Destination_State">
+   <option value=""></option>
+   <option value="AL" %%Destination_State_AL_Selected%%>Alabama</option>
+   <option value="AK" %%Destination_State_AK_Selected%%>Alaska</option>
+   <option value="AZ" %%Destination_State_AZ_Selected%%>Arizona</option>
+   <option value="AR" %%Destination_State_AR_Selected%%>Arkansas</option>
+   <option value="CA" %%Destination_State_CA_Selected%%>California</option>
+   <option value="CO" %%Destination_State_CO_Selected%%>Colorado</option>
+   <option value="CT" %%Destination_State_CT_Selected%%>Connecticut</option>
+   <option value="DC" %%Destination_State_DC_Selected%%>District of Columbia</option>
+   <option value="DE" %%Destination_State_DE_Selected%%>Delaware</option>
+   <option value="FL" %%Destination_State_FL_Selected%%>Florida</option>
+   <option value="GA" %%Destination_State_GA_Selected%%>Georgia</option>
+   <option value="HI" %%Destination_State_HI_Selected%%>Hawaii</option>
+   <option value="ID" %%Destination_State_ID_Selected%%>Idaho</option>
+   <option value="IL" %%Destination_State_IL_Selected%%>Illinois</option>
+   <option value="IN" %%Destination_State_IN_Selected%%>Indiana</option>
+   <option value="IA" %%Destination_State_IA_Selected%%>Iowa</option>
+   <option value="KS" %%Destination_State_KS_Selected%%>Kansas</option>
+   <option value="KY" %%Destination_State_KY_Selected%%>Kentucky</option>
+   <option value="LA" %%Destination_State_LA_Selected%%>Louisiana</option>
+   <option value="ME" %%Destination_State_ME_Selected%%>Maine</option>
+   <option value="MD" %%Destination_State_MD_Selected%%>Maryland</option>
+   <option value="MA" %%Destination_State_MA_Selected%%>Massachusetts</option>
+   <option value="MI" %%Destination_State_MI_Selected%%>Michigan</option>
+   <option value="MN" %%Destination_State_MN_Selected%%>Minnesota</option>
+   <option value="MS" %%Destination_State_MS_Selected%%>Mississippi</option>
+   <option value="MO" %%Destination_State_MO_Selected%%>Missouri</option>
+   <option value="MT" %%Destination_State_MT_Selected%%>Montana</option>
+   <option value="NE" %%Destination_State_NE_Selected%%>Nebraska</option>
+   <option value="NV" %%Destination_State_NV_Selected%%>Nevada</option>
+   <option value="NH" %%Destination_State_State_NH_Selected%%>New Hampshire</option>
+   <option value="NJ" %%Destination_State_NJ_Selected%%>New Jersey</option>
+   <option value="NM" %%Destination_State_NM_Selected%%>New Mexico</option>
+   <option value="NY" %%Destination_State_NY_Selected%%>New York</option>
+   <option value="NC" %%Destination_State_NC_Selected%%>North Carolina</option>
+   <option value="ND" %%Destination_State_ND_Selected%%>North Dakota</option>
+   <option value="OH" %%Destination_State_OH_Selected%%>Ohio</option>
+   <option value="OK" %%Destination_State_OK_Selected%%>Oklahoma</option>
+   <option value="OR" %%Destination_State_OR_Selected%%>Oregon</option>
+   <option value="PA" %%Destination_State_PA_Selected%%>Pennsylvania</option>
+   <option value="PR" %%Destination_State_PR_Selected%%>Puerto Rico</option>
+   <option value="RI" %%Destination_State_RI_Selected%%>Rhode Island</option>
+   <option value="SC" %%Destination_State_SC_Selected%%>South Carolina</option>
+   <option value="SD" %%Destination_State_SD_Selected%%>South Dakota</option>
+   <option value="TN" %%Destination_State_TN_Selected%%>Tennessee</option>
+   <option value="TX" %%Destination_State_TX_Selected%%>Texas</option>
+   <option value="UT" %%Destination_State_UT_Selected%%>Utah</option>
+   <option value="VT" %%Destination_State_VT_Selected%%>Vermont</option>
+   <option value="VA" %%Destination_State_VA_Selected%%>Virginia</option>
+   <option value="WA" %%Destination_State_WA_Selected%%>Washington</option>
+   <option value="WV" %%Destination_State_WV_Selected%%>West Virginia</option>
+   <option value="WI" %%Destination_State_WI_Selected%%>Wisconsin</option>
+   <option value="WY" %%Destination_State_WY_Selected%%>Wyoming</option>
+  </select></font>
+  %%Destination_State_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Zip:&nbsp; </td>
+				<td>
+				<input name="Destination_Zip" maxlength="50" size="10" value="%%Destination_Zip%%"></td>
+				<td>
+				&nbsp;%%Destination_Zip_Required%%</td>
+				<td width="10">
+				&nbsp;</td>
+				<td>
+				<a target="_blank" href="http://zip4.usps.com/zip4/citytown.jsp"><img src="templates/deco/icon_zip_finder.gif" width="38" height="29" border="0"></a><br>
+				<a target="_blank" href="http://zip4.usps.com/zip4/citytown.jsp">
+				<font size="1">USPS zip code look-up</font></a></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table25">
+			<tr>
+				<td colspan="4">&nbsp; </td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center"><p align="center">Contact phone: %%Destination_Contact_Phone_Required%%</td>
+				<td width="55%" align="center"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="10">
+				<p align="right">&nbsp; </td>
+				<td width="45%" align="center">
+				<input name="Destination_Contact_Phone" maxlength="50" size="15" value="%%Destination_Contact_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Destination_Best_Contact_Time">
+			<option value=''></option>
+			<option value='All_Day' %%Destination_Best_Contact_Time_All_Day_Selected%%>All Day</option>
+			<option value='8am_to_10am' %%Destination_Best_Contact_Time_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Destination_Best_Contact_Time_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Destination_Best_Contact_Time_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Destination_Best_Contact_Time_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Destination_Best_Contact_Time_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Destination_Best_Contact_Time_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Destination_Best_Contact_Time_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Destination_Best_Contact_Time_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			<option value='Evening' %%Destination_Best_Contact_Time_Evening_Selected%%>Evening</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center">
+				&nbsp;</td>
+				<td width="55%" align="center">
+ 			&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center"><p align="center">
+				Alternate phone:</td>
+				<td width="55%" align="center"><p align="center">
+ 				Best time to call:</td>
+			</tr>
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="10">
+				&nbsp;</td>
+				<td width="45%" align="center">
+<font face="Verdana">
+				<input name="Destination_Alternate_Phone" maxlength="50" size="15" value="%%Destination_Alternate_Phone%%"></td>
+				<td width="55%" align="center">
+<font face="Verdana">
+ 			<select name="Destination_Best_Contact_Time_Alternate">
+			<option value=''></option>
+			<option value='Evening' %%Destination_Best_Contact_Time_Alternate_Evening_Selected%%>Evening</option>
+			<option value='8am_to_10am' %%Destination_Best_Contact_Time_Alternate_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Destination_Best_Contact_Time_Alternate_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Destination_Best_Contact_Time_Alternate_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Destination_Best_Contact_Time_Alternate_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Destination_Best_Contact_Time_Alternate_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Destination_Best_Contact_Time_Alternate_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Destination_Best_Contact_Time_Alternate_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Destination_Best_Contact_Time_Alternate_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table22">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="105">
+				<p align="right">Email:&nbsp; </td>
+				<td>
+				<input name="Destination_Email_Address" maxlength="50" size="25" value="%%Destination_Email_Address%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+				<td valign="top" width="30">&nbsp;</td>
+				<td><p align="left">
+      &nbsp;<br>
+		Questions or
+		Comments:</td>
+			</tr>
+			<tr>
+				<td valign="top" width="30">&nbsp;<p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table27">
+       <tr>
+        <td><textarea name="Comments"  cols="30" rows="8">%%Comments%%</textarea></td>
+        <td valign="top">
+        &nbsp;</td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp; </td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

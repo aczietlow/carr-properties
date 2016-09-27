@@ -1,0 +1,870 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Estimate Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Refinishing_Rooms,Property_Refinish_Type,Types_of_Refinishing,Level_of_Preparation,Refinish_Work_Needed,Project_Status,Request_Complete_When,After_Hours,Insurance_Claim,Commercial_Location,Own_This_Property,Project_Description,Preferred_Communication,Email_Address,First_Name,Last_Name,Security_Code,Address,City,State,Zip">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" id="table2" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%% id="table3">
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table28">
+			<tr>
+				<td>
+				<p align="center"><b>Refinishing Estimate Questionnaire</b></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="10" valign="top">&nbsp;</td>
+				<td valign="top" colspan="3"><p align="left">
+				<b>Which rooms need refinishing?</b></td>
+			</tr>
+			<tr>
+				<td width="10" valign="top">%%required_image_star%%</td>
+				<td width="50" valign="top" align="right">
+				<p align="right">&nbsp;</td>
+				<td align="left"><p align="left">
+	<input type="checkbox" name="Refinishing_Rooms_1" value="Kitchen" %%Refinishing_Rooms_1_Kitchen_selected%%>Kitchen<br>
+	<input type="checkbox" name="Refinishing_Rooms_2" value="Bathroom" %%Refinishing_Rooms_2_Bathroom_selected%%>Bathroom(s)<br>
+	<input type="checkbox" name="Refinishing_Rooms_3" value="Entry" %%Refinishing_Rooms_3_Entry_selected%%>Entry<br>
+	<input type="checkbox" name="Refinishing_Rooms_4" value="Other" %%Refinishing_Rooms_4_Other_selected%%>Other</td>
+				<td>%%Refinishing_Rooms_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="100">
+				<p align="right">Other Rooms:&nbsp; </td>
+				<td>
+				<input name="Other_Refinishing_Rooms" maxlength="50" size="25" value="%%Other_Refinishing_Rooms%%"></td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="2"><p align="left">
+				<b>Please describe your property</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="70">
+				<p align="right">Select:&nbsp; </td>
+				<td>
+	<select name='Property_Refinish_Type'>
+	<option value=''></option>
+	<option value='Home_One_Story' %%Property_Refinish_Type_Home_One_Story_Selected%%>Home - one story</option>
+	<option value='Home_Two_Story' %%Property_Refinish_Type_Home_Two_Story_Selected%%>Home - two story</option>
+	<option value='Home_-_Three_or_More_Stories' %%Property_Refinish_Type_Home_-_Three_or_More_Stories_Selected%%>Home - three (or more) stories</option>
+	<option value='Apartment_1-99_Units' %%Property_Refinish_Type_Apartment_1-99_Units_Selected%%>Apartment (1-99 units)</option>
+	<option value='Apartment_100-199_Units' %%Property_Refinish_Type_Apartment_100-199_Units_Selected%%>Apartment (100 - 199 units)</option>
+	<option value='Apartment_200_or_More_Units' %%Property_Refinish_Type_Apartment_200_or_More_Units_Selected%%>Apartment (200 + units)</option>
+	<option value='Hotels_Condominiums' %%Property_Refinish_Type_Hotels_Condominiums_Selected%%>Hotels/Condominiums</option>
+	</select>
+	%%Property_Refinish_Type_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="10" valign="top">&nbsp;</td>
+				<td valign="top" colspan="3"><p align="left">
+				<b>What type(s) of refinishing?</b></td>
+			</tr>
+			<tr>
+				<td width="10" valign="top">%%required_image_star%%</td>
+				<td width="100" valign="top">
+				<p align="right">Type:&nbsp; </td>
+				<td><p align="left">
+	<input type="checkbox" name="Types_of_Refinishing_1" value="Bathtub" %%Types_of_Refinishing_1_Bathtub_selected%%>Bathtub<br>
+	<input type="checkbox" name="Types_of_Refinishing_2" value="Tiles" %%Types_of_Refinishing_2_Tiles_selected%%>Tiles<br>
+	<input type="checkbox" name="Types_of_Refinishing_3" value="Countertops" %%Types_of_Refinishing_3_Countertops_selected%%>Countertops<br>
+	<input type="checkbox" name="Types_of_Refinishing_4" value="Other" %%Types_of_Refinishing_4_Other_selected%%>Other</td>
+				<td>%%Types_of_Refinishing_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="100">
+				<p align="right">Other:&nbsp; </td>
+				<td>
+				<input name="Other_Type_of_Refinishing" maxlength="50" size="25" value="%%Other_Type_of_Refinishing%%"></td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="3"><p align="left">
+				<b>What level of preparation is necessary?</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td>
+				<p align="right">&nbsp;</td>
+				<td><p align="left">
+				<input type="radio" name="Level_of_Preparation" value="Customer_will_move_furniture" %%Customer_will_move_furniture_Selected%%> 
+				Customer will move furniture<br>
+				<input type="radio" name="Level_of_Preparation" value="Contractor_will_move_furniture" %%Contractor_will_move_furniture_Selected%%> 
+				Contractor will move furniture
+				</td>
+				<td>
+				%%Level_of_Preparation_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="10" valign="top">&nbsp;</td>
+				<td valign="top" colspan="3"><p align="left">
+				<b>Which problems or services will need special attention?</b></td>
+			</tr>
+			<tr>
+				<td width="10" valign="top">%%required_image_star%%</td>
+				<td width="120" valign="top">
+				<p align="right">Type Of&nbsp;&nbsp;
+				<br>
+				Work Needed:&nbsp; </td>
+				<td><p align="left">
+	<input type="checkbox" name="Refinish_Work_Needed_1" value="Scratches" %%Refinish_Work_Needed_1_Scratches_selected%%>Scratches<br>
+	<input type="checkbox" name="Refinish_Work_Needed_2" value="Chips_and_Cracks" %%Refinish_Work_Needed_2_Chips_and_Cracks_selected%%>Chips and Cracks<br>
+	<input type="checkbox" name="Refinish_Work_Needed_3" value="Discolorations" %%Refinish_Work_Needed_3_Discolorations_selected%%>Discolorations<br>
+	<input type="checkbox" name="Refinish_Work_Needed_4" value="Gouges_and_Holes" %%Refinish_Work_Needed_4_Gouges_and_Holes_selected%%>Gouges and Holes<br>
+	<input type="checkbox" name="Refinish_Work_Needed_5" value="Burns" %%Refinish_Work_Needed_5_Burns_selected%%>Burns<br>
+	<input type="checkbox" name="Refinish_Work_Needed_6" value="Cuts" %%Refinish_Work_Needed_6_Cuts_selected%%>Cuts<br>
+	<input type="checkbox" name="Refinish_Work_Needed_7" value="Other" %%Refinish_Work_Needed_7_Other_selected%%>Other</td>
+				<td>%%Refinish_Work_Needed_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="105">
+				<p align="right">Other:&nbsp; </td>
+				<td>
+				<input name="Other_Refinish_Work_Needed" maxlength="50" size="25" value="%%Other_Refinish_Work_Needed%%"></td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="2"><p align="left">
+				<b>Choose the appropriate status for this project</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Select:&nbsp; </td>
+				<td>
+	<select name='Project_Status'>
+	<option value=''></option>
+	<option value='Ready_to_Hire' %%Project_Status_Ready_to_Hire_Selected%%>Ready to hire</option>
+	<option value='Planning_and_Budgeting' %%Project_Status_Planning_and_Budgeting_Selected%%>Planning and budgeting</option>
+	</select>
+	%%Project_Status_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="2"><p align="left">
+				<b>When would you like this request to be completed?</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Select:&nbsp; </td>
+				<td>
+	<select name='Request_Complete_When'>
+	<option value=''></option>
+	<option value='Emergency_Service' %%Request_Complete_When_Emergency_Service_Selected%%>Emergency service</option>
+	<option value='Timing_is_Flexible' %%Request_Complete_When_Timing_is_Flexible_Selected%%>Timing is flexible</option>
+	<option value='Less_than_a_week' %%Request_Complete_When_Less_than_a_week_Selected%%>Less than a week</option>
+	<option value='1_-_2_weeks' %%Request_Complete_When_1_-_2_weeks_Selected%%>1 - 2 weeks</option>
+	<option value='3_-_4_weeks' %%Request_Complete_When_3_-_4_weeks_Selected%%>3 - 4 weeks</option>
+	<option value='5_-_6_weeks' %%Request_Complete_When_5_-_6_weeks_Selected%%>5 - 6 weeks</option>
+	</select>
+	%%Request_Complete_When_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="3"><p align="left">
+				<b>Do you need help after business hours?</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td>
+				<p align="right">Select:&nbsp; </td>
+				<td><p align="left">
+				<input type="radio" name="After_Hours" value="After_Yes" %%After_Yes_Selected%%> 
+				Yes<br>
+				<input type="radio" name="After_Hours" value="After_No" %%After_No_Selected%%> 
+				No
+				</td>
+				<td>
+				%%After_Hours_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="3"><p align="left">
+				<b>Is this request covered by an insurance claim?</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td>
+				<p align="right">Select:&nbsp; </td>
+				<td><p align="left">
+				<input type="radio" name="Insurance_Claim" value="Insurance_Yes" %%Insurance_Yes_Selected%%> 
+				Yes<br>
+				<input type="radio" name="Insurance_Claim" value="Insurance_No" %%Insurance_No_Selected%%> 
+				No
+				</td>
+				<td>
+				%%Insurance_Claim_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="3"><p align="left">
+				<b>Is this a commercial location?</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td>
+				<p align="right">Select:&nbsp; </td>
+				<td><p align="left">
+				<input type="radio" name="Commercial_Location" value="Commercial_Yes" %%Commercial_Yes_Selected%%> 
+				Yes<br>
+				<input type="radio" name="Commercial_Location" value="Commercial_No" %%Commercial_No_Selected%%> 
+				No
+				</td>
+				<td>
+				%%Commercial_Location_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="3"><p align="left">
+				<b>Do you own this property?</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td>
+				<p align="right">Select:&nbsp; </td>
+				<td><p align="left">
+				<input type="radio" name="Own_This_Property" value="Own_Yes" %%Own_Yes_Selected%%> 
+				Yes<br>
+				<input type="radio" name="Own_This_Property" value="Own_No" %%Own_No_Selected%%> 
+				No
+				</td>
+				<td>
+				%%Own_This_Property_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+				<td valign="top" width="30">&nbsp;</td>
+				<td><p align="left">
+      &nbsp;<br>
+		<b>Please provide a short description of your project:</b></td>
+			</tr>
+			<tr>
+				<td valign="top" width="30">%%required_image_star%%<p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table27">
+       <tr>
+        <td><textarea name="Project_Description"  cols="30" rows="8">%%Project_Description%%</textarea></td>
+        <td valign="top">
+        %%Project_Description_Required%%</td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+	<td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+	<td width="5">&nbsp;</td>
+	<td width="70">&nbsp;</td>
+	<td><p align="left"><font size="1">&nbsp;<br>
+	You may upload a picture of <br>
+	your project if you wish.</font></td>
+    </tr>
+
+    <tr>
+	<td width="5">&nbsp;</td>
+	<td width="70"><p align="right">Attach&nbsp;&nbsp;
+	<br>
+&nbsp;A Photo:&nbsp; </td>
+	<td><input type="file" name="File" maxlength="50" size="22" value="%%File%%"></td>
+    </tr>
+
+    <tr>
+	<td width="5">&nbsp;</td>
+	<td width="70">&nbsp;</td>
+	<td><p align="left"><font size="1">Leave field blank if no photo 
+	attached.</font><br>
+	&nbsp;<br>
+	</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td colspan="3"><p align="left">
+				<b>What is your preferred method of communication?</b></td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td>
+				<p align="right">Select:&nbsp; </td>
+				<td><p align="left">
+				<input type="radio" name="Preferred_Communication" value="Phone" %%Phone_Selected%%> 
+				Phone<br>
+				<input type="radio" name="Preferred_Communication" value="Email" %%Email_Selected%%> 
+				Email
+				</td>
+				<td>
+				%%Preferred_Communication_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="4">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">First Name:&nbsp; </td>
+				<td>
+				<input name="First_Name" maxlength="50" size="25" value="%%First_Name%%"> 
+				%%First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table24">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Last Name:&nbsp; </td>
+				<td>
+				<input name="Last_Name" maxlength="50" size="25" value="%%Last_Name%%">
+				%%Last_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+     <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table22">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Email:&nbsp; </td>
+				<td>
+				<input name="Email_Address" maxlength="50" size="25" value="%%Email_Address%%"> 
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table25">
+			<tr>
+				<td colspan="2"><font size="1">&nbsp; </font> </td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">
+				Contact phone:</td>
+				<td width="55%"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td align="center">
+<font face="Verdana">
+				<p><input name="Contact_Phone" maxlength="50" size="15" value="%%Contact_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Best_Contact_Time">
+			<option value=''></option>
+			<option value='All_Day' %%Best_Contact_Time_All_Day_Selected%%>All Day</option>
+			<option value='8am_to_10am' %%Best_Contact_Time_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Best_Contact_Time_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Best_Contact_Time_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Best_Contact_Time_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Best_Contact_Time_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Best_Contact_Time_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Best_Contact_Time_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Best_Contact_Time_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			<option value='Evening' %%Best_Contact_Time_Evening_Selected%%>Evening</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="2"><font size="1">&nbsp;</font></td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">Alternate phone:</td>
+				<td width="55%"><p align="center">Best time to call:</td>
+			</tr>
+			<tr>
+				<td>
+				<p align="center">
+				<input name="Alternate_Phone" maxlength="50" size="15" value="%%Alternate_Phone%%"></td>
+				<td width="55%" align="center">
+ 			<select name="Best_Contact_Time_Alternate">
+			<option value=''></option>
+			<option value='Evening' %%Best_Contact_Time_Alternate_Evening_Selected%%>Evening</option>
+			<option value='8am_to_10am' %%Best_Contact_Time_Alternate_8am_to_10am_Selected%%>8am to 10am</option>
+			<option value='9am_to_11am' %%Best_Contact_Time_Alternate_9am_to_11am_Selected%%>9am to 11am</option>
+			<option value='10am_to_Noon' %%Best_Contact_Time_Alternate_10am_to_Noon_Selected%%>10am to Noon</option>
+			<option value='11am_to_1pm' %%Best_Contact_Time_Alternate_11am_to_1pm_Selected%%>11am to 1pm</option>
+			<option value='Noon_to_2pm' %%Best_Contact_Time_Alternate_Noon_to_2pm_Selected%%>Noon to 2pm</option>
+			<option value='1pm_to_3pm' %%Best_Contact_Time_Alternate_1pm_to_3pm_Selected%%>1pm to 3pm</option>
+			<option value='2pm_to_4pm' %%Best_Contact_Time_Alternate_2pm_to_4pm_Selected%%>2pm to 4pm</option>
+			<option value='3pm_to_5pm' %%Best_Contact_Time_Alternate_3pm_to_5pm_Selected%%>3pm to 5pm</option>
+			</select></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+				<font size="1">&nbsp;</font></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Address:&nbsp; </td>
+				<td>
+				<input name="Address" maxlength="50" size="25" value="%%Address%%">
+				%%Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">City:&nbsp; </td>
+				<td>
+				<input name="City" maxlength="50" size="25" value="%%City%%">
+				%%City_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">State:&nbsp; </td>
+				<td><font face="Verdana"><select name="State">
+   <option value=""></option>
+   <option value="AL" %%AL_Selected%%>Alabama</option>
+   <option value="AK" %%AK_Selected%%>Alaska</option>
+   <option value="AZ" %%AZ_Selected%%>Arizona</option>
+   <option value="AR" %%AR_Selected%%>Arkansas</option>
+   <option value="CA" %%CA_Selected%%>California</option>
+   <option value="CO" %%CO_Selected%%>Colorado</option>
+   <option value="CT" %%CT_Selected%%>Connecticut</option>
+   <option value="DC" %%DC_Selected%%>District of Columbia</option>
+   <option value="DE" %%DE_Selected%%>Delaware</option>
+   <option value="FL" %%FL_Selected%%>Florida</option>
+   <option value="GA" %%GA_Selected%%>Georgia</option>
+   <option value="HI" %%HI_Selected%%>Hawaii</option>
+   <option value="ID" %%ID_Selected%%>Idaho</option>
+   <option value="IL" %%IL_Selected%%>Illinois</option>
+   <option value="IN" %%IN_Selected%%>Indiana</option>
+   <option value="IA" %%IA_Selected%%>Iowa</option>
+   <option value="KS" %%KS_Selected%%>Kansas</option>
+   <option value="KY" %%KY_Selected%%>Kentucky</option>
+   <option value="LA" %%LA_Selected%%>Louisiana</option>
+   <option value="ME" %%ME_Selected%%>Maine</option>
+   <option value="MD" %%MD_Selected%%>Maryland</option>
+   <option value="MA" %%MA_Selected%%>Massachusetts</option>
+   <option value="MI" %%MI_Selected%%>Michigan</option>
+   <option value="MN" %%MN_Selected%%>Minnesota</option>
+   <option value="MS" %%MS_Selected%%>Mississippi</option>
+   <option value="MO" %%MO_Selected%%>Missouri</option>
+   <option value="MT" %%MT_Selected%%>Montana</option>
+   <option value="NE" %%NE_Selected%%>Nebraska</option>
+   <option value="NV" %%NV_Selected%%>Nevada</option>
+   <option value="NH" %%NH_Selected%%>New Hampshire</option>
+   <option value="NJ" %%NJ_Selected%%>New Jersey</option>
+   <option value="NM" %%NM_Selected%%>New Mexico</option>
+   <option value="NY" %%NY_Selected%%>New York</option>
+   <option value="NC" %%NC_Selected%%>North Carolina</option>
+   <option value="ND" %%ND_Selected%%>North Dakota</option>
+   <option value="OH" %%OH_Selected%%>Ohio</option>
+   <option value="OK" %%OK_Selected%%>Oklahoma</option>
+   <option value="OR" %%OR_Selected%%>Oregon</option>
+   <option value="PA" %%PA_Selected%%>Pennsylvania</option>
+   <option value="PR" %%PR_Selected%%>Puerto Rico</option>
+   <option value="RI" %%RI_Selected%%>Rhode Island</option>
+   <option value="SC" %%SC_Selected%%>South Carolina</option>
+   <option value="SD" %%SD_Selected%%>South Dakota</option>
+   <option value="TN" %%TN_Selected%%>Tennessee</option>
+   <option value="TX" %%TX_Selected%%>Texas</option>
+   <option value="UT" %%UT_Selected%%>Utah</option>
+   <option value="VT" %%VT_Selected%%>Vermont</option>
+   <option value="VA" %%VA_Selected%%>Virginia</option>
+   <option value="WA" %%WA_Selected%%>Washington</option>
+   <option value="WV" %%WV_Selected%%>West Virginia</option>
+   <option value="WI" %%WI_Selected%%>Wisconsin</option>
+   <option value="WY" %%WY_Selected%%>Wyoming</option>
+  </select></font>
+  %%State_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Zip:&nbsp; </td>
+				<td>
+				<input name="Zip" maxlength="50" size="10" value="%%Zip%%">
+				%%Zip_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+				<td valign="top" width="30">&nbsp;</td>
+				<td><p align="left">
+      &nbsp;<br>
+		<b>Additional
+		Comments:</b></td>
+			</tr>
+			<tr>
+				<td valign="top" width="30">&nbsp;<p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table27">
+       <tr>
+        <td><textarea name="Additional_Comments"  cols="30" rows="8">%%Additional_Comments%%</textarea></td>
+        <td valign="top">
+        &nbsp;</td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp; </td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="2">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></td>
+    </tr>
+
+    <tr>
+     <td><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

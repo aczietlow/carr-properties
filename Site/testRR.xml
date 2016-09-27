@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<property type="Commercial" uid="8">
+  <title>title</title>
+  <address>
+    <city>city</city>
+    <state>SC</state>
+    <zip>111</zip>
+  </address>
+  <lease>
+    <perMonth>perMonth</perMonth>
+    <perSqFt>perMonth</perSqFt>
+  </lease>
+  <f>111</f>
+  <pictures>
+    <picture>images/8picture1.jpg</picture>
+    <picture>images/8picture2.jpg</picture>
+  </pictures>
+  <floorPlans>
+    <fp>images/8FlPl1.jpg</fp>
+  </floorPlans>
+</property>

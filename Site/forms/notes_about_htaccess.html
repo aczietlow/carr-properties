@@ -1,0 +1,167 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Notes about PHP5, PHP4, and .htaccess</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+</head>
+
+<body>
+
+<div>
+	<div align="center">
+		<table border="1" cellpadding="0" cellspacing="0" width="700" bordercolor="#000080" id="table84">
+			<tr>
+				<td>
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table85">
+					<tr>
+						<td width="20" height="20">&nbsp;</td>
+						<td height="20">
+
+		<font face="Verdana" size="1">
+
+		<a target="window.open" href="http://bestwebforms.com">
+
+		<font color="#000000">BestWebForms.com</font></a> &copy 2008<br>
+&nbsp;<br>
+&nbsp;</font></td>
+						<td width="20" height="20">&nbsp;</td>
+					</tr>
+					<tr>
+						<td width="20">&nbsp;</td>
+						<td>
+
+<p class="MsoNormal"><font face="Verdana"><b>Notes about PHP6, PHP5, PHP4, 
+and .htaccess<span style="line-height:115%">:</span></b></font><font size="2" face="Verdana"><br>
+<br>
+Our Web Forms Package should run under PHP4, PHP5, and PHP6.<br>
+But on some servers, some tweaking may be needed. See below.</font></p>
+<p class="MsoNormal"><font face="Verdana" size="2">Running under PHP5</font></p>
+<p class="MsoNormal"><font face="Verdana" size="2">With the adopting of PHP5 by most modern web hosts and 
+control panels, there is a need to understand “how” your web host and server is 
+running PHP5 in addition to just whether it supports it or not.</font></p>
+<p class="MsoNormal"><font face="Verdana" size="2">Apache 2.0x – 2.2x supports compiling either PHP4&nbsp; or PHP5 
+or BOTH. If you are running both on your server – then your host will most 
+likely have a protocol for invoking PHP 4 if PHP5 is running. More often than 
+not this is done via a file extension such as “whatever.php4”.</font></p>
+<p class="MsoNormal">
+<span style="font-size:10.0pt;line-height:115%;font-family:
+Verdana">This is because it is not possible to run both PHP5 and PHP4 as Apache 
+modules, rather one must be run as CGI, with the other one being run as an 
+Apache module.</span></p>
+<p class="MsoNormal">
+<span style="font-size:10.0pt;line-height:115%;font-family:
+Verdana">In the case of an upgrade at the hosting level, most likely the PHP5 
+will be run as a module while PHP4 will be run as CGI.</span></p>
+<p class="MsoNormal"><font face="Verdana" size="2"><b>Helpful tips &amp; workarounds to aide running our forms or 
+other scripts under PHP5:</b></font></p>
+<p class="MsoNormal"><font face="Verdana" size="2">Put an .htaccess in your /public_html/ (cPanel) or /httpdocs/ 
+(PLESK) or root directory, with:</font></p>
+<p class="MsoNormal"><font face="Verdana" size="2">&nbsp;AddHandler application/x-httpd-php4 .php</font></p>
+<p class="MsoNormal"><font face="Verdana" size="2">This will allow your scripts to access PHP4 after any 
+upgrade to PHP5.</font></p>
+<p class="MsoNormal"><font face="Verdana" size="2"><b>How to tell if you are running PHP 4 or 5 and whether it 
+is run under phpsuexec</b></font></p>
+<p class="MsoNormal" style="margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal"><span style="font-family: Verdana"><font size="2">The first 
+step is to find out if your server is using phpsuexec. This can be done by 
+running a simple 'php info' script.<br>
+<br>
+</font></span><font face="Verdana" size="2"><font face="Verdana">
+<span class="content">
+									<font size="2">To check which version of PHP 
+is installed on your website's server, we have included the file <b>phptest.php</b> 
+which contains just the following line of code:<br>
+&nbsp;<br>
+&nbsp;</font></span></font>
+</p>
+<div align="center">
+	<table id="table86" borderColor="#999999" cellSpacing="0" cellPadding="0" width="80%" bgColor="#cccccc" border="1">
+		<tr>
+			<td>
+			<p align="left">
+			<font color="#333333" size="2" face="Verdana,Arial,Helvetica,SansSerif">
+			&nbsp;<br>
+			</font>
+			<font size="2" face="Verdana,Arial,Helvetica,SansSerif">
+			<b>&lt;?php phpinfo(); ?&gt;</b></font><font color="#333333" size="2" face="Verdana,Arial,Helvetica,SansSerif"><br>
+			&nbsp;</font></td>
+		</tr>
+	</table>
+	</div>
+<p><font face="Verdana"><span class="content"><font size="2">
+After uploading to your server: enter the full url of this file into 
+your browser. For example: <b>http://www.your-website.com/forms/<a href="phptest.php">phptest.php</a></b>.</font></span></font></p>
+<b>Note:</b> For added security, you might wish to delete this file from your 
+server when you are done.</font><p class="MsoNormal">
+<span style="line-height: 115%; font-family: Verdana">
+<font size="2">Load the file in your browser and in the top section find the line 'Server API'. 
+If it shows 'CGI' then your account is on a server with phpsuexec. If it lists 
+the server API as 'apache' you are not on a phpsuexec server.<br>
+<br>
+The next step is to add the appropriate command to your .htaccess file. For the 
+primary domain name on an account the .htaccess file should be located in the 
+public_html folder. Create the file if it does not exist. If it does exist, then 
+make sure to save a backup copy. <br>
+Rename it .htaccess-backup. </font></span></p>
+<p class="MsoNormal">
+<span style="line-height: 115%; font-family: Verdana">
+<font size="2">Place one of the 
+following commands in the file:<br>
+<br>
+If your account is not on a phpsuexec server use:<br>
+<br>
+AddType application/x-httpd-php5 .php<br>
+<br>
+If your account is on a phpsuexec server use:<br>
+<br>
+AddHandler application/x-httpd-php5 .php</font></span></p>
+<div><font face="Verdana" size="2">For your convenience, we have included 3 
+	.htaccess files located in your download. We have name them something like
+	<b>z-.htaccess-AddHandler-application-php4.txt</b>.<br>
+	<br>
+	Rename the appropriate file <b>.htaccess</b> (it will not function with the name we 
+	have given it. Your server looks for a file named <b>.htaccess</b>).<br>
+	<br>
+	You might try all 3 files if the first one doesn't do the job. It might work 
+	perfectly by keeping it in the &quot;forms&quot; directory. But you might need to 
+	place it in the &quot;root&quot;, which is usually called htdocs or public_html. 
+	<br>
+	<br>
+	In other words:<br>
+	Your web hosting service must have PHP installed and properly configured for 
+	the program to run. Please make sure they have PHP and what version they are 
+	using. Bestwebforms will work with PHP 4.2.0 or later. <br>
+	Rename the file z-.htaccess-AddHandler-application-php4.txt (for PHP 4) to 
+	.htaccess,<br>
+	or rename z-.htaccess-AddHandler-application-php5.txt (for PHP 5) to 
+	.htaccess and try to access your web forms again. If that doesn't work, you 
+	must ask your hosting service to add an application handler for proper 
+	execution of your PHP files.<br>&nbsp;</font></div>
+										<p>&nbsp;</td>
+						<td width="20">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="20" height="20">&nbsp;</td>
+							<td height="20">
+							<p align="center">
+
+		<font face="Verdana" size="1">
+
+		<a target="window.open" href="http://bestwebforms.com">
+
+		<font color="#000000">BestWebForms.com</font></a> &copy 2008</font></td>
+							<td width="20" height="20">&nbsp;</td>
+						</tr>
+					</table>
+				</td>
+				</tr>
+			</table>
+		</div>
+	<font face="Verdana" size="2" color="#000080"><u><b><br>
+&nbsp;</b></u></font></div>
+
+</body>
+
+</html>

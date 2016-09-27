@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proprerties>
+			<property type="commercial" uid="001">
+				<title>Office Building, Dorchester Road</title>
+				<address>
+					<street>2125 Dorchester Road</street>
+					<city>North Charleston</city>
+					<state>SC</state>
+					<zip/>
+				</address>
+				<lease>
+					<perMonth>1788</perMonth>
+					<perSqFt/>
+				</lease>
+				<pictures>
+					<pic>img\01office3.jpg</pic>
+					<pic>img\02office3.jpg</pic>
+					<pic>img\03office3.jpg</pic>
+				</pictures>
+				<features>
+					<f>Very Clean, tastefully decorated recently</f>
+					<f>2 curb cuts for convenient ingress and egress</f>
+					<f>Plenty of parking</f>
+					<f>Well suited for professional use</f>
+					<f>Within sight of the former Naval hospital and Charleston County Sheriff's office</f>
+					<f>Lot information: 120x90x123x70= 9,720 SF</f>
+					<f>TMS # 469-11-00-034</f>
+					<f>MLS # 2809380</f>
+				</features>
+				<floorPlans>
+					<fp>img\fp1office3.jpg</fp>
+					<fp>img\fp2office3.jpg</fp>
+				</floorPlans>
+			</property>
+						<property type="commercial" uid="001">
+				<title>Office Building, Dorchester Road</title>
+				<address>
+					<street>2125 Dorchester Road</street>
+					<city>North Charleston</city>
+					<state>SC</state>
+					<zip/>
+				</address>
+				<lease>
+					<perMonth>1788</perMonth>
+					<perSqFt/>
+				</lease>
+				<pictures>
+					<pic>img\01office3.jpg</pic>
+					<pic>img\02office3.jpg</pic>
+					<pic>img\03office3.jpg</pic>
+				</pictures>
+				<features>
+					<f>Very Clean, tastefully decorated recently</f>
+					<f>2 curb cuts for convenient ingress and egress</f>
+					<f>Plenty of parking</f>
+					<f>Well suited for professional use</f>
+					<f>Within sight of the former Naval hospital and Charleston County Sheriff's office</f>
+					<f>Lot information: 120x90x123x70= 9,720 SF</f>
+					<f>TMS # 469-11-00-034</f>
+					<f>MLS # 2809380</f>
+				</features>
+				<floorPlans>
+					<fp>img\fp1office3.jpg</fp>
+					<fp>img\fp2office3.jpg</fp>
+				</floorPlans>
+			</property>
+						<property type="commercial" uid="001">
+				<title>Office Building, Dorchester Road</title>
+				<address>
+					<street>2125 Dorchester Road</street>
+					<city>North Charleston</city>
+					<state>SC</state>
+					<zip/>
+				</address>
+				<lease>
+					<perMonth>1788</perMonth>
+					<perSqFt/>
+				</lease>
+				<pictures>
+					<pic>img\01office3.jpg</pic>
+					<pic>img\02office3.jpg</pic>
+					<pic>img\03office3.jpg</pic>
+				</pictures>
+				<features>
+					<f>Very Clean, tastefully decorated recently</f>
+					<f>2 curb cuts for convenient ingress and egress</f>
+					<f>Plenty of parking</f>
+					<f>Well suited for professional use</f>
+					<f>Within sight of the former Naval hospital and Charleston County Sheriff's office</f>
+					<f>Lot information: 120x90x123x70= 9,720 SF</f>
+					<f>TMS # 469-11-00-034</f>
+					<f>MLS # 2809380</f>
+				</features>
+				<floorPlans>
+					<fp>img\fp1office3.jpg</fp>
+					<fp>img\fp2office3.jpg</fp>
+				</floorPlans>
+			</property>
+
+	
+</proprerties>

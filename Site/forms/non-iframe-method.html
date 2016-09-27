@@ -1,0 +1,267 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Instructions for NOT using the iFrame</title>
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+</head>
+
+<body>
+
+									<font size="2" face="Verdana">
+<table border="1" cellpadding="10" cellspacing="0" width="600" bordercolor="#000080" id="table1">
+	<tr>
+		<td>
+		<div align="center">
+			<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+				<tr>
+					<td>
+
+		<font face="Verdana" size="1">
+
+		<a target="window.open" href="http://bestwebforms.com">
+
+		<font color="#000000">BestWebForms.com</font></a> &copy 2008<br>
+&nbsp;<br>
+&nbsp;</font></td>
+				</tr>
+				<tr>
+					<td>
+									<font size="2" face="Verdana"><b><u>
+									These Instructions are for 
+									<font color="#0000CC">NOT</font> using the iFrame Code Snippet method.</u></b><p>
+									The <font color="#0000CC"> <b>EASIEST</b></font> 
+									way to make your web form match the general 
+									look of your website is to use the 
+									<font color="#0000CC"><b>Web Form 
+									Designer</b></font> to use the<font color="#0000CC">
+									<b>iFrame Code Snippet Method</b></font> 
+									which will generate the <b>IFRAME Code Snippet</b>. Then 
+									just paste the snippet into a page you already have. 
+									The page will need to have sufficient space 
+									in it so that the form has room to be 
+									displayed properly. <b><br>
+									Then you should be 
+									done</b>.<br>
+									<br>
+									<font color="#0000CC"><b>The next easiest way</b></font> is to use the 
+									<font color="#0000CC"><b>Web Form 
+									Designer</b></font> to use the <b>
+									<font color="#0000CC"><u>Non</u>-iFrame Method</font></b>. 
+									Once there, you insert your header and 
+									footer code into their fields. <b>Then you 
+									are done</b>. <br>
+									<br>
+									<font color="#0000CC"><b>But the most difficult way</b></font> is as follows:
+									The below few paragraphs explain the 
+									<b>very difficult way</b> to make changes 
+									<b>without</b> using the Web Form Designer and 
+									<b>without</b> using the iFrame Code Snippet 
+									Method.
+									<br>
+									<br>
+									Make the form look like the other pages 
+									on your website by using the <font color="#0000FF">
+									<b>header.html</b></font> and 
+									<font color="#0000FF"> <b>
+									footer.html</b> </font>files in <b>/inc</b> directory.<br>
+									<br>
+									If you do not wish to (or cannot) use the 
+									Web Form Designer, 
+									then you can follow the steps below.</p>
+									<p>Create your 
+									header and footer pages. There are samples 
+									you can use at:<br>
+									/inc/<b>header-sample.html</b><br>
+									and<br>
+									/inc/<b>footer-sample.html</b><br>
+									<br>
+									Currently, the script calls the server for 
+									the files &quot;<b>header.html</b>&quot; and &quot;<b>footer.html</b>&quot;.<br>
+									Your header and footer must be named this.<br>
+&nbsp;<br>
+									There are 2 examples of the header and 
+									footer. One is blank and one has a sample 
+									menu. <br>
+									If you wish, you can just rename &quot;header-sample.html&quot; 
+									to &quot;header.html&quot; (switch them). This will drop the form 
+									code right
+									into the center of the sample header 
+									template provided.<br>
+									<br>
+									You can do the same thing with the &quot;footer.html&quot;.<br>
+									<br>
+									But if you prefer to (or have to) do it &quot;manually&quot;, all you need to do is use 
+									an existing page from your website, delete a 
+									center area <b>AND BOTTOM </b>of the page. Then save it as &quot;<b>header.html</b>&quot; 
+									in the directory: /inc/. You will need to 
+									change the relative paths to your header 
+									images. This all depends on your directory 
+									structure. Sometimes just adding a&nbsp; /&nbsp; 
+									to beginning of your image path is all you 
+									need. Other times, a&nbsp; ../&nbsp; before 
+									the image path. Or, if you really want to be 
+									sure, you can just insert the full url of 
+									your images. So here are some of the 
+									options:<b><font color="#0000CC"><br>
+									<br>
+									/your-images/my-nice-graphic.jpg<br>
+									<br>
+									../your-images/my-nice-graphic.jpg<br>
+									<br>
+									http://www.insert-your-website.com/your-images/my-nice-graphic.jpg</font></b></p>
+									<p>You can also copy your entire image 
+									directory and css files over the the /inc 
+									directory.</p>
+									<p>There are many ways to have your images 
+									appear properly on your new <b>header.html</b> 
+									file.<br>
+									<br>
+									Now this is <b>very</b> important: Remove the 
+									ending/closing code tags from your newly 
+									created header.html. Make sure to name it <b>header.html</b>, 
+									and place it in the <b>inc</b>/ directory.</p>
+									<p>Study the end of the file: header-sample.html 
+									in the /inc directory. Make yours like that.<br>
+&nbsp;<br>
+									Usually, the code of an html page ends with 
+									something like:<br>
+									<br>
+									<b>&lt;p&gt;&amp;nbsp;&lt;/p&gt;<br>
+									<br>
+									&lt;/body&gt;<br>
+									<br>
+									&lt;/html&gt;</b><br>
+									<br>
+									Using the included /inc/header-sample.html 
+									as an example, the new header should not 
+									&quot;end&quot;.<br>
+									Our example header ends with:<br>
+									<br>
+									<b>&lt;tr&gt;<br>
+									&lt;td valign=&quot;bottom&quot;&gt;&amp;nbsp;&lt;/td&gt;<br>
+									&lt;td valign=&quot;bottom&quot;&gt;</b><br>
+									<br>
+									<u><b>Do not</b></u> end your new header.html file with 
+									code like:<br>
+									<br>
+									<b>&lt;/body&gt;<br>
+									<br>
+									&lt;/html&gt;</b><br>
+									<br>
+									If you do, then the form with want to load 
+									&quot;outside&quot; or &quot;next to&quot; the page.<br>
+									If you make this mistake, you will see what 
+									I mean. End it similar to header-sample.html.</p>
+									<p>Lastly, the way you link to your form 
+									will be different using this &quot;non-iFrame&quot; 
+									method.<br>
+									Instead of the link to your form being 
+									something like:<br>
+									<b><font color="#0000CC">
+									http://www.insert-your-website.com/contact_me.html</font></b>,<br>
+									it will instead being something like:<br>
+									<b><font color="#0000CC">http://www.insert-your-website.com/your-directory-name/formbwf.php?f=1</font>
+									<br>
+									</b>With the section in the above url 
+									&quot;<b>f=1</b>&quot;, the &quot;<b>1</b>&quot; is for the contact form named 
+									&quot;contactus-classic.html&quot;. If your form is a 
+									different one, like &quot;Contact Form - 
+									Complete&quot; 
+									(which is contactus-complete.html), then the 
+									end of this link would be &quot;<b>f=2</b>&quot;.</p>
+									<p>
+									**********************************************************************<br>
+									<br>
+									Note: Make sure your images and external 
+									JavaScript files (and CSS tables) have 
+									absolute URLs, <br>
+									like for instance:</p>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table99">
+										<tr>
+											<td width="73">&nbsp;</td>
+											<td><b>
+											<font face="Verdana" size="2">Code:</font></b></td>
+										</tr>
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table100">
+										<tr>
+											<td width="73">&nbsp;</td>
+											<td>
+											<table border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="#F5F5F5" id="table101" bordercolor="#CCCCCC">
+												<tr>
+													<td>
+													<font size="2" face="Verdana">
+													&lt;img src=&quot;http://www.insert-your-website.com/images/image1.gif&quot;&gt;<br>
+													&lt;script 
+													language=&quot;JavaScript&quot; src=&quot;http://www.insert-your-website.com/script.js/&quot;&gt;&lt;/script&gt;<br>
+													&lt;link href=&quot;http://www.insert-your-website.com/styles.css&quot; 
+													rel=&quot;stylesheet&quot; 
+													type=&quot;text/css&quot;&gt;</font></td>
+												</tr>
+											</table>
+											</td>
+										</tr>
+									</table>
+									<p><br>
+									To make your life easier, try adding:</p>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table102">
+										<tr>
+											<td width="73">&nbsp;</td>
+											<td><b>
+											<font face="Verdana" size="2">Code:</font></b></td>
+										</tr>
+									</table>
+									<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table103">
+										<tr>
+											<td width="73">&nbsp;</td>
+											<td>
+											<table border="1" cellpadding="3" cellspacing="0" width="100%" bgcolor="#F5F5F5" id="table104" bordercolor="#CCCCCC">
+												<tr>
+													<td>
+													<font size="2" face="Verdana">
+													&lt;base href=&quot;http://www.insert-your-website.com/&quot;&gt;</font></td>
+												</tr>
+											</table>
+											</td>
+										</tr>
+									</table>
+									<p><br>
+									right after the opening &lt;HEAD&gt; tag in
+									<font color="#0000FF"><b>header.html</b></font>. 
+									The slash after .com is important, <br>
+									so do not leave it out.<br>
+									That may save you editing all your image's 
+									URLs.<p>Also, if you do not use the Web Form 
+									Designer at all, then you will need to set 
+									your preferences for text styles, borders, 
+									colors, email addresses, and such directly 
+									into the configbwf.php file. Open it up in a 
+									text editor and insert your choices. Then 
+									upload that file.</font><p><font size="2">Yes, the above 
+					is complex. That is why we suggest using the iFrame Code 
+					Snippet method.<br>
+					Also, please feel free to let us know how we can make these 
+					instructions better. <br>
+					Thank you.</font></td>
+				</tr>
+				<tr>
+					<td>
+									<p align="center">&nbsp;<br>
+
+		<font face="Verdana" size="1">
+
+		<a target="window.open" href="http://bestwebforms.com">
+
+		<font color="#000000">BestWebForms.com</font></a> &copy 2008</font></td>
+				</tr>
+			</table>
+		</div>
+		</td>
+	</tr>
+</table>
+
+</body>
+
+</html>

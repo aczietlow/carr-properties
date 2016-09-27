@@ -1,0 +1,644 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Garment Quote Order Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+<script language="JavaScript" src="./ts_picker.js"></script>
+
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="First_Name,Last_Name,Address,City,State,Zip,Contact_Phone,Garment_Type,Print_Location,Garment_Color,Due_Date,Email_Address,Security_Code">
+<input type="hidden" name="Subject" value="Your online quote has been submitted.">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center"><b>Garment Quote Form</b></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center"><b>Customer Information</b>:</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table7">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">First Name:&nbsp; </td>
+				<td><input name="First_Name" maxlength="50" size="20" value="%%First_Name%%">
+				%%First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Last Name:&nbsp; </td>
+				<td><input name="Last_Name" maxlength="50" size="20" value="%%Last_Name%%">
+				%%Last_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Address:&nbsp; </td>
+				<td><input name="Address" maxlength="50" size="20" value="%%Address%%">
+				%%Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5"></td>
+				<td width="125">
+				<p align="right">Address 2:&nbsp; </td>
+				<td><input name="Address_2" maxlength="50" size="20" value="%%Address_2%%">
+				</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">City:&nbsp; </td>
+				<td><input name="City" maxlength="50" size="20" value="%%City%%">
+				%%City_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">State<b>:</b>&nbsp; </td>
+				<td><font><select name="State">
+   <option value=""></option>
+   <option value="AL" %%AL_Selected%%>Alabama</option>
+   <option value="AK" %%AK_Selected%%>Alaska</option>
+   <option value="AZ" %%AZ_Selected%%>Arizona</option>
+   <option value="AR" %%AR_Selected%%>Arkansas</option>
+   <option value="CA" %%CA_Selected%%>California</option>
+   <option value="CO" %%CO_Selected%%>Colorado</option>
+   <option value="CT" %%CT_Selected%%>Connecticut</option>
+   <option value="DC" %%DC_Selected%%>District of Columbia</option>
+   <option value="DE" %%DE_Selected%%>Delaware</option>
+   <option value="FL" %%FL_Selected%%>Florida</option>
+   <option value="GA" %%GA_Selected%%>Georgia</option>
+   <option value="HI" %%HI_Selected%%>Hawaii</option>
+   <option value="ID" %%ID_Selected%%>Idaho</option>
+   <option value="IL" %%IL_Selected%%>Illinois</option>
+   <option value="IN" %%IN_Selected%%>Indiana</option>
+   <option value="IA" %%IA_Selected%%>Iowa</option>
+   <option value="KS" %%KS_Selected%%>Kansas</option>
+   <option value="KY" %%KY_Selected%%>Kentucky</option>
+   <option value="LA" %%LA_Selected%%>Louisiana</option>
+   <option value="ME" %%ME_Selected%%>Maine</option>
+   <option value="MD" %%MD_Selected%%>Maryland</option>
+   <option value="MA" %%MA_Selected%%>Massachusetts</option>
+   <option value="MI" %%MI_Selected%%>Michigan</option>
+   <option value="MN" %%MN_Selected%%>Minnesota</option>
+   <option value="MS" %%MS_Selected%%>Mississippi</option>
+   <option value="MO" %%MO_Selected%%>Missouri</option>
+   <option value="MT" %%MT_Selected%%>Montana</option>
+   <option value="NE" %%NE_Selected%%>Nebraska</option>
+   <option value="NV" %%NV_Selected%%>Nevada</option>
+   <option value="NH" %%NH_Selected%%>New Hampshire</option>
+   <option value="NJ" %%NJ_Selected%%>New Jersey</option>
+   <option value="NM" %%NM_Selected%%>New Mexico</option>
+   <option value="NY" %%NY_Selected%%>New York</option>
+   <option value="NC" %%NC_Selected%%>North Carolina</option>
+   <option value="ND" %%ND_Selected%%>North Dakota</option>
+   <option value="OH" %%OH_Selected%%>Ohio</option>
+   <option value="OK" %%OK_Selected%%>Oklahoma</option>
+   <option value="OR" %%OR_Selected%%>Oregon</option>
+   <option value="PA" %%PA_Selected%%>Pennsylvania</option>
+   <option value="PR" %%PR_Selected%%>Puerto Rico</option>
+   <option value="RI" %%RI_Selected%%>Rhode Island</option>
+   <option value="SC" %%SC_Selected%%>South Carolina</option>
+   <option value="SD" %%SD_Selected%%>South Dakota</option>
+   <option value="TN" %%TN_Selected%%>Tennessee</option>
+   <option value="TX" %%TX_Selected%%>Texas</option>
+   <option value="UT" %%UT_Selected%%>Utah</option>
+   <option value="VT" %%VT_Selected%%>Vermont</option>
+   <option value="VA" %%VA_Selected%%>Virginia</option>
+   <option value="WA" %%WA_Selected%%>Washington</option>
+   <option value="WV" %%WV_Selected%%>West Virginia</option>
+   <option value="WI" %%WI_Selected%%>Wisconsin</option>
+   <option value="WY" %%WY_Selected%%>Wyoming</option>
+  </select></font>
+  %%State_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table12">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Zip:&nbsp; </td>
+				<td><input name="Zip" maxlength="50" size="12" value="%%Zip%%">
+				%%Zip_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table13">
+			<tr>
+				<td width="5" height="32">%%required_image_star%%</td>
+				<td width="120" height="32">
+				<p align="right">Phone:<b>&nbsp;
+				</b>
+				</td>
+				<td height="32">
+<font>
+				<input name="Contact_Phone" maxlength="50" size="20" value="%%Contact_Phone%%">
+</font>%%Contact_Phone_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table14">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Email:&nbsp; </td>
+				<td><input name="Email_Address" maxlength="50" size="20" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table27">
+			<tr>
+				<td width="100%" height="30" valign="top" colspan="2">
+                <hr color="#1A77B2" width="95%">
+                </td>
+			</tr>
+			<tr>
+				<td width="20%" height="50" valign="top">
+                    %%required_image_star%%</td>
+				<td height="50" valign="top">
+                    <p style="margin-left: 10; margin-right: 10">Garment Type<br>
+                    <select name='Garment_Type'>
+						<option value=''></option>
+                        <font size="2">
+                        <option value='T_Shirt_Short_Sleeve' %%Garment_Type_T_Shirt_Short_Sleeve_Selected%%>T-Shirt (Short Sleeve)</option>
+                        <option value='T_Shirt_Long_Sleeve' %%Garment_Type_T_Shirt_Long_Sleeve_Selected%%>T-Shirt (Long Sleeve)</option>
+                        <option value='Fleece_Sweatshirt' %%Garment_Type_Fleece_Sweatshirt_Selected%%>Fleece (Sweatshirt)</option>
+                        <option value='Polos' %%Garment_Type_Polos_Selected%%>Polos</option>
+                        <option value='Bags' %%Garment_Type_Bags_Selected%%>Bags</option>
+                        <option value='Aprons' %%Garment_Type_Aprons_Selected%%>Aprons</option>
+                        </select></font>
+				%%Garment_Type_Required%%</b></td> 
+			</tr>
+			<tr>
+				<td width="20%" height="50" valign="top">
+                    %%required_image_star%%</td>
+				<td height="50" valign="top">
+                    <p style="margin-left: 10; margin-right: 10">Print Locations<b><font><br>
+                    <select name='Print_Location'>
+						<option value=''></option>
+                        <font size="2">
+                        <option value='Front' %%Print_Location_Front_Selected%%>Front</option>
+                        <option value='Back' %%Print_Location_Back_Selected%%>Back</option>
+                        <option value='Left_Chest' %%Print_Location_Left_Chest_Selected%%>Left Chest</option>
+                        <option value='Sleeve' %%Print_Location_Sleeve_Selected%%>Sleeve</option>
+                        <option value='Front_and_Back' %%Print_Location_Front_and_Back_Selected%%>Front & Back</option>
+                        <option value='Front_Back_and_Sleeve' %%Print_Location_Front_Back_and_Sleeve_Selected%%>Front, Back & Sleeve</option>
+                        <option value='Front_and_Sleeve' %%Print_Location_Front_and_Sleeve_Selected%%>Front & Sleeve</option>
+                        <option value='Back_Sleeve' %%Print_Location_Back_Sleeve_Selected%%>Back & Sleeve</option>
+                        <option value='Other_Describe_Below' %%Print_Location_Other_Describe_Below_Selected%%>Other (Describe Below)</option>
+                        </select></font></font></b>
+				%%Print_Location_Required%%</td> 
+			</tr>
+			<tr>
+				<td width="20%" height="50" valign="top">
+				%%required_image_star%%</td>
+				<td height="50" valign="top">
+				<p style="margin-left: 10; margin-right: 10">
+                    Garment Color<br>
+                    <input name="Garment_Color" maxlength="50" size="20" value="%%Garment_Color%%">
+				%%Garment_Color_Required%%</td>
+			</tr>
+			<tr>
+				<td width="20%" height="50" valign="top">
+                    %%required_image_star%%</td>
+				<td height="50" valign="top">
+				<p style="margin-left: 10; margin-right: 10">
+                    Date Due<font><br>
+                    <input name="Due_Date" maxlength="20" size="10" value="%%Due_Date%%"> <a href="javascript:show_calendar('document.forms[0].Due_Date', document.forms[0].Due_Date.value);"><img src="templates/deco/cal.gif" width="16" height="16" border="0" alt="Click Here to Pick the Due Date"></a></font></b>
+				%%Due_Date_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    
+    
+    <tr>
+     				<td colspan="3">
+                    <p style="margin-left: 10; margin-right: 10"><i><b>
+                    Select Number of Colors</b></i></tr>
+                  </tr>
+    
+    <tr>
+     				<td width="16%" height="50" align="center">
+                    <p align="center">
+                        Front<b> <br>
+                        <select name='Nbr_Colors_Front'>
+						<option value=''></option>
+                        <font size="2">
+                        <option value='0' %%Nbr_Colors_Front_0_Selected%%>0</option>
+                        <option value='1' %%Nbr_Colors_Front_1_Selected%%>1</option>
+                        <option value='2' %%Nbr_Colors_Front_2_Selected%%>2</option>
+                        <option value='3' %%Nbr_Colors_Front_3_Selected%%>3</option>
+                        <option value='4' %%Nbr_Colors_Front_4_Selected%%>4</option>
+                        <option value='5' %%Nbr_Colors_Front_5_Selected%%>5</option>
+                        <option value='6' %%Nbr_Colors_Front_6_Selected%%>6</option>
+                        <option value='7' %%Nbr_Colors_Front_7_Selected%%>7</option>
+                        <option value='8' %%Nbr_Colors_Front_8_Selected%%>8</option>
+                        </select></font></b></td>
+                    <td width="16%" height="50" align="center">
+                    <p align="center">
+                        Back<b><br>
+                        <select name='Nbr_Colors_Back'>
+						<option value=''></option>
+                        <font size="2">
+                        <option value='0' %%Nbr_Colors_Back_0_Selected%%>0</option>
+                        <option value='1' %%Nbr_Colors_Back_1_Selected%%>1</option>
+                        <option value='2' %%Nbr_Colors_Back_2_Selected%%>2</option>
+                        <option value='3' %%Nbr_Colors_Back_3_Selected%%>3</option>
+                        <option value='4' %%Nbr_Colors_Back_4_Selected%%>4</option>
+                        <option value='5' %%Nbr_Colors_Back_5_Selected%%>5</option>
+                        <option value='6' %%Nbr_Colors_Back_6_Selected%%>6</option>
+                        <option value='7' %%Nbr_Colors_Back_7_Selected%%>7</option>
+                        <option value='8' %%Nbr_Colors_Back_8_Selected%%>8</option>
+                        </select></font></b></td>
+                    <td width="17%" height="50" align="center">
+                    <p align="center">
+                        Sleeve<b><br>
+                        <select name='Nbr_Colors_Sleeve'>
+						<option value=''></option>
+                        <font size="2">
+                        <option value='0' %%Nbr_Colors_Sleeve_0_Selected%%>0</option>
+                        <option value='1' %%Nbr_Colors_Sleeve_1_Selected%%>1</option>
+                        <option value='2' %%Nbr_Colors_Sleeve_2_Selected%%>2</option>
+                        <option value='3' %%Nbr_Colors_Sleeve_3_Selected%%>3</option>
+                        <option value='4' %%Nbr_Colors_Sleeve_4_Selected%%>4</option>
+                        <option value='5' %%Nbr_Colors_Sleeve_5_Selected%%>5</option>
+                        <option value='6' %%Nbr_Colors_Sleeve_6_Selected%%>6</option>
+                        <option value='7' %%Nbr_Colors_Sleeve_7_Selected%%>7</option>
+                        <option value='8' %%Nbr_Colors_Sleeve_8_Selected%%>8</option>
+                        </select></font></b></td>
+                  </tr>
+    
+    <tr>
+     				<td colspan="3">
+                    <p style="margin-left: 10; margin-right: 10"><i><b>
+                    Select Quantity:
+					Adult Sizes</b></i></td>
+                  </tr>
+    
+    <tr>
+     				<td width="16%" height="50" align="center">
+                    <p align="center">Small<b><br>
+                    </b><font>
+                    <input name="Adult_Sm_Qty" size="6" value="%%Adult_Sm_Qty%%"></font></td>
+                    <td width="16%" height="50" align="center">
+                    <p align="center">Medium<b><br>
+                    </b>
+                    <font>
+                    <input name="Adult_Md_Qty" size="6" value="%%Adult_Md_Qty%%"></font></td>
+                    <td width="17%" height="50" align="center">
+                    <p align="center">Large<b><br>
+                    </b>
+                    <font>
+                    <input name="Adult_Lg_Qty" size="6" value="%%Adult_Lg_Qty%%"></font></td>
+                  </tr>
+    
+    <tr>
+     				<td width="16%" height="50" align="center">
+                    <p align="center">X-Large<b><br>
+                    </b>
+                    <font>
+                    <input name="Adult_XL_Qty" size="6" value="%%Adult_XL_Qty%%"></font></td>
+                    <td width="16%" height="50" align="center">
+                    <p align="center">XXL<b><br>
+                    </b>
+                    <font>
+                    <input name="Adult_XXL_Qty" size="6" value="%%Adult_XXL_Qty%%"></font></td>
+                    <td width="17%" height="50" align="center">
+                    <p align="center">XXX<b><br>
+                    </b>
+                    <font>
+                    <input name="Adult_XXX_Qty" size="6" value="%%Adult_XXX_Qty%%"></font></td>
+                  </tr>
+                  <tr>
+     				<td colspan="3">
+                    <p style="margin-left: 10; margin-right: 10"><i><b>
+                    Select Quantity:
+					Youth Sizes</b></i></td>
+                  </tr>
+    
+    <tr>
+     				<td width="16%" height="50" align="center">
+                    <p align="center">Y-XSmall<b><br>
+                    </b>
+                    <font>
+                    <input name="Youth_XSm_Qty" size="6" value="%%Youth_XSm_Qty%%"></font></td>
+                    <td width="16%" height="50" align="center">
+                    <p align="center">Y-Small<b><br>
+                    </b>
+                    <font>
+                    <input name="Youth_Sm_Qty" size="6" value="%%Youth_Sm_Qty%%"></font></td>
+                    <td width="17%" height="50" align="center">
+                    <p align="center">Y-Medium<b><br>
+                    </b>
+                    <font>
+                    <input name="Youth_Md_Qty" size="6" value="%%Youth_Md_Qty%%"></font></td>
+                  </tr>
+    
+    <tr>
+     				<td width="16%" height="50" align="center">
+                    <p align="center">Y-Large<b><br>
+                    </b>
+                    <font>
+                    <input name="Youth_Lg_Qty" size="6" value="%%Youth_Lg_Qty%%"></font></td>
+                    <td width="16%" height="50" align="center">
+                    <p align="center">Y-XLarge<b><br>
+                    </b>
+                    <font>
+                    <input name="Youth_XLg_Qty" size="6" value="%%Youth_XLg_Qty%%"></font></td>
+                    <td width="17%" height="50" align="center">
+                    &nbsp;</td>
+                  </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+                <hr color="#1A77B2" width="95%">
+                </td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table28">
+			<tr>
+	<td colspan="2"><font size="1">&nbsp;</font></td>
+    		</tr>
+			<tr>
+<font>
+	<td width="60">
+<font>
+	<p align="left">&nbsp;</td>
+	<td><p align="left"><font size="1">You may send an attachment if you wish.</font></td>
+    		</tr>
+			<tr>
+	<td width="60"><p align="right">File:&nbsp; </td>
+	<td>
+	<input type="file" name="File" maxlength="50" size="20" value="%%File%%"></td>
+    		</tr>
+			<tr>
+	<td width="60">&nbsp;</td>
+	<td><p align="left"><font size="1">Leave above field blank if no file 
+	attached.</font><br>
+	</td>
+    		</tr>
+			<tr>
+	<td colspan="2">
+<font size="1">
+	&nbsp;</td>
+    		</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td width="100%" colspan="3">
+                    <p style="margin-left: 10" align="center">Describe Artwork 
+                    &amp; Design Requirements<b><font face="Arial" size="2" color="#1A77B2"><br>
+                    <textarea name="Artwork_Desc"  cols="30" rows="7">%%Artwork_Desc%%</textarea></font></b></td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+    
+    <tr>
+     <td width="100%" colspan="3">
+                    <p style="margin-left: 10" align="center">Additional 
+                Information and/or<br>
+					Comments About Order<b><font face="Arial" size="2" color="#1A77B2"><br>
+                    <textarea name="Additional_Info"  cols="30" rows="7">%%Additional_Info%%</textarea><br>
+&nbsp;</font></b></td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+                <hr color="#1A77B2" width="95%">
+                </td>
+    </tr>
+
+    <tr>
+     <td align="right">&nbsp;</td><td>&nbsp;</td><td></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send a copy to me</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3"><font>
+		<input type="submit" value="Submit Quote"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<p align="left"><font size="1">&nbsp;<a href="javascript:privacy(1)">Privacy Policy</a></font></font></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

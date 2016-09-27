@@ -1,0 +1,316 @@
+<!--
+ * (C) Copyright 2007 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Contact Us</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<p>
+
+<!--
+ * The below validation javascript is for those who have it enabled on their browsers - over 95%.
+ * The form fields also have code such as "Email_Address_Required" for those with javascript turned off.
+-->
+
+<script language=javascript>
+<!--
+function validate(){
+	var Err="";
+	if (!isEmail(document.form.Email_Address)){
+		alert("Please enter a valid email address.");
+		document.form.Email_Address.focus();
+		return false;
+	}
+	if (document.form.Name.value==""){
+		alert("Please type your name.");
+		document.form.Name.focus();
+		return false;
+	}
+	if (document.form.Contact_Phone.value==""){
+		alert("Please type your phone number.");
+		document.form.Contact_Phone.focus();
+		return false;
+	}
+	if (document.form.Comments.value==""){
+		alert("Please enter your comments.");
+		document.form.Comments.focus();
+		return false;
+	}
+
+	return true;
+}
+
+function isEmail(obj)
+{
+    var s = obj.value;
+    var atSymIdx = s.indexOf("@");
+	var atSymLidx=s.lastIndexOf("@");
+    var dotIdx = s.lastIndexOf(".");
+	var dotFIdx = s.indexOf(".");
+	var answer = true;
+    if (atSymIdx < 1 || dotFIdx<1 || dotIdx < (atSymIdx +2) || s.length < (dotIdx + 2) || atSymLidx==s.length-1 || atSymIdx!=atSymLidx)
+		answer = false;
+	if (!answer)
+	{
+		return false;
+	}
+
+	return true;
+}
+
+//-->
+</script>
+
+
+<?php echo $message; ?>
+
+
+
+<table cellSpacing="0" cellPadding="0" width="150" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data" onSubmit="return validate()">
+<font face="Verdana">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Contact_Phone,Email_Address,Name,Security_Code,Comments">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+ <tr>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" id="table2" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%% class="verdana" id="table3">
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table28">
+			<tr>
+				<td align="center"><p align="center">
+				<p><b>Contact Us</b></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center"><font face="Verdana" size="1">%%missing_fields_message%%</font></td>
+    </tr>
+    <tr>
+     <td align="center"><font size="1">&nbsp;</font></td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table23">
+			<tr>
+				<td width="10">
+				&nbsp;</td>
+				<td><p align="left">
+				Name:</td>
+			</tr>
+			<tr>
+				<td width="10">
+				<p align="right"><font face="Verdana" size="1">&nbsp; 
+				</font> </td>
+				<td>
+				<font size="1" face="Verdana">
+				<input name="Name" maxlength="50" size="16" value="%%Name%%"></font></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table21">
+			<tr>
+				<td width="10">
+				&nbsp;</td>
+				<td><p align="left">
+				Phone Number:</td>
+			</tr>
+			<tr>
+				<td width="10">
+				<p align="right"><font face="Verdana" size="1">&nbsp; </font> </td>
+				<td>
+				<font size="1" face="Verdana">
+				<input name="Contact_Phone" maxlength="50" size="16" value="%%Contact_Phone%%"></font></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table22">
+			<tr>
+				<td width="10">
+				&nbsp;</td>
+				<td><p align="left">
+				Email Address:</td>
+			</tr>
+			<tr>
+				<td width="10">
+				<p align="right"><font face="Verdana" size="1">&nbsp; </font> </td>
+				<td>
+				<font size="1" face="Verdana">
+				<input name="Email_Address" maxlength="50" size="16" value="%%Email_Address%%"></font></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+				<td valign="top" width="10">&nbsp;</td>
+				<td>
+      <p align="left"><font size="1">&nbsp;</font><br>
+		Comments:</td>
+			</tr>
+			<tr>
+				<td valign="top" width="10"><font face="Verdana" size="1">&nbsp;&nbsp;&nbsp;&nbsp;
+				</font><p align="right">
+				<font face="Verdana" size="1">&nbsp; 
+				</font> </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table27">
+       <tr>
+        <td><font size="1" face="Verdana">
+		<textarea name="Comments"  cols="12" rows="6">%%Comments%%</textarea></font></td>
+        <td valign="top"> &nbsp;</td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center"><font size="1">&nbsp;</font></td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center"><font size="1"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%></font>Send 
+		a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center"><font size="1">%%Security_Code_HTML%%</font></td>
+    </tr>
+
+    <tr>
+      <td align="center"><font size="1" face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center"><font size="1" face="Verdana">&nbsp;</font></td>
+    </tr>
+
+    <tr>
+<font face="Verdana">
+     <td align="center"><font size="1">%%required_image_msg%%</font></td>
+    </tr>
+
+    <tr>
+      <td align="center"><font size="1">&nbsp;</font></td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;</font><font size="1" color="#000066"><a href="javascript:privacy(1)">Privacy Policy</a></font></td>
+    </tr>
+
+    <tr>
+     <td align="center">
+<font face="Verdana" size="1">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		</font>
+		<font size="1">Powered by<br>
+</font>
+		<font size="1" color="#666666">
+<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		Web Forms 3.0</a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

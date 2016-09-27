@@ -1,0 +1,323 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Tech Support Request Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="First_Name,Last_Name,Email_Address,Company,Product,Support_Category,Priority,Comments,Security_Code">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center"><p align="center">Support Request</td>
+    </tr>
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">First Name:&nbsp; </td>
+				<td>
+				<input name="First_Name" maxlength="50" size="24" value="%%First_Name%%">
+				%%First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table3">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Last Name:&nbsp; </td>
+				<td>
+				<input name="Last_Name" maxlength="50" size="24" value="%%Last_Name%%">
+				%%Last_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table4">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Email:&nbsp; </td>
+				<td>
+				<input name="Email_Address" maxlength="50" size="24" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table5">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Company:&nbsp; </td>
+				<td>
+				<input name="Company" maxlength="50" size="24" value="%%Company%%">
+				%%Company_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Product:&nbsp; </td>
+				<td><input name="Product" maxlength="250" size="24" value="%%Product%%">
+				%%Product_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5" height="32">&nbsp;</td>
+				<td width="100" height="32">
+				<p align="right">Phone:&nbsp; </td>
+				<td height="32">
+<font face="Verdana">
+				<input name="Contact_Phone" maxlength="50" size="20" value="%%Contact_Phone%%"></td>
+			</tr>
+			<tr>
+				<td width="5" height="32">&nbsp;</td>
+				<td width="100" height="32">
+				<p align="right">URL:&nbsp; </td>
+				<td height="32">
+<font face="Verdana">
+<input name="URL" maxlength="250" size="24" value="%%URL%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="170">
+				<p align="right">Priority:&nbsp; </td>
+				<td>
+	<select name='Priority'>
+	<option value=''></option>
+	<option value='Critical' %%Priority_Critical_Selected%%>Critical</option>
+	<option value='High' %%Priority_High_Selected%%>High</option>
+	<option value='Medium' %%Priority_Medium_Selected%%>Medium</option>
+	<option value='Low' %%Priority_Low_Selected%%>Low</option>
+	</select>
+	%%Priority_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="170">
+				<p align="right">Support Category:&nbsp; </td>
+				<td>
+	<select name='Support_Category'>
+	<option value=''></option>
+	<option value='Product_Use' %%Support_Category_Product_Use_Selected%%>Product Use</option>
+	<option value='Features' %%Support_Category_Features_Selected%%>Features</option>
+	<option value='Billing' %%Support_Category_Billing_Selected%%>Billing</option>
+	<option value='Online_Help' %%Support_Category_Online_Help_Selected%%>Online Help</option>
+	<option value='Other' %%Support_Category_Other_Selected%%>Other</option>
+	</select>
+	%%Support_Category_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table7">
+			<tr>
+				<td width="40" valign="bottom">%%required_image_star%%</td>
+				<td colspan="2"><p align="left">
+				&nbsp;<br>
+				Comments:</td>
+			</tr>
+			<tr>
+				<td width="40">&nbsp;<p align="right">
+				&nbsp; </td>
+				<td>
+				<textarea name="Comments"  cols="28" rows="8">%%Comments%%</textarea></td>
+				<td valign="top">
+				&nbsp;%%Comments_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+<font face="Verdana">
+     <td align="center"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;<a href="javascript:privacy(1)">Privacy Policy</a></font></font></td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

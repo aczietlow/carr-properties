@@ -1,0 +1,235 @@
+<?xml version="1.0"?>
+<proprerties>
+  <property type="commercial" uid="001">
+    <title>Office Building, Dorchester Road</title>
+    <address>
+      <street>2125 Dorchester Road</street>
+      <city>North Charleston</city>
+      <state>SC</state>
+      <zip/>
+    </address>
+    <lease>
+      <perMonth>1788</perMonth>
+      <perSqFt/>
+    </lease>
+    <pictures>
+      <pic>images\01office3.jpg</pic>
+      <pic>images\02office3.jpg</pic>
+      <pic>images\03office3.jpg</pic>
+    </pictures>
+    <features>
+      <f>Very Clean, tastefully decorated recently</f>
+      <f>2 curb cuts for convenient ingress and egress</f>
+      <f>Plenty of parking</f>
+      <f>Well suited for professional use</f>
+      <f>Within sight of the former Naval hospital and Charleston County Sheriff's office</f>
+      <f>Lot information: 120x90x123x70= 9,720 SF</f>
+      <f>TMS # 469-11-00-034</f>
+      <f>MLS # 2809380</f>
+    </features>
+    <floorPlans>
+      <fp>images\fp1office3.jpg</fp>
+      <fp>images\fp2office3.jpg</fp>
+    </floorPlans>
+  </property>
+  <property type="Commercial" uid="2">
+    <title>Office Suite, Marina Drive</title>
+    <address>
+      <street>634 Marina Drive, STE D</street>
+      <city>Charleston</city>
+      <state>SC</state>
+      <zip>29492</zip>
+    </address>
+    <lease>
+      <perMonth>1596</perMonth>
+      <perSqFt>1.21</perSqFt>
+    </lease>
+    <features>
+      <f>1,321 Sq Ft</f>
+      <f>Includes normal utilities, base year taxes, and insurance</f>
+    </features>
+    <pictures>
+      <picture>images/2picture1.jpg</picture>
+      <picture>images/2picture2.jpg</picture>
+      <picture>images/2picture3.jpg</picture>
+      <picture>images/2picture4.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/2FlPl1.jpg</fp>
+    </floorPlans>
+  </property>
+  <property type="Commercial" uid="3">
+    <title>Office Building, Commander Drive</title>
+    <address>
+      <street>2108 Commander Drive</street>
+      <city>Charleston</city>
+      <state>SC</state>
+      <zip>29405</zip>
+    </address>
+    <lease>
+      <perMonth>954</perMonth>
+      <perSqFt>10.74</perSqFt>
+    </lease>
+    <features>
+      <f>1,065 sq. ft</f>
+      <f>200 sq. ft. garage space included</f>
+      <f>Includes base year taxes and insurance</f>
+      <f>Close proximity to former Naval Hospital and Charleston County Shireff's Office</f>
+      <f>Great for professional use</f>
+    </features>
+    <pictures>
+      <picture>images/3picture1.jpg</picture>
+      <picture>images/3picture2.jpg</picture>
+      <picture>images/3picture3.jpg</picture>
+      <picture>images/3picture4.jpg</picture>
+      <picture>images/3picture5.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/3FlPl1.jpg</fp>
+    </floorPlans>
+  </property>
+  <property type="Commercial" uid="4">
+    <title>Office Space, Commerce Circle</title>
+    <address>
+      <street>909 Commerce Circle, STE A </street>
+      <city>Hanahan</city>
+      <state>SC</state>
+      <zip>29410</zip>
+    </address>
+    <lease>
+      <perMonth>3500</perMonth>
+      <perSqFt>1.03</perSqFt>
+    </lease>
+    <features>
+      <f>3,400 SF of a 5,700 SF office flex suite located in close proximity to the State Ports Authority, Charleston Naval Weapons Station</f>
+      <f>Good frontage, sign space and ample parking</f>
+      <f>Owner will consider leasing entirety of the office suite</f>
+      <f>Space could be leased in a furnished state for additional rents</f>
+      <f>Check with us on availability date</f>
+      <f>3,500 a month lease term negotiable</f>
+      <f>Rent includes normal utilities, base years taxes, insurance and CAM</f>
+    </features>
+    <pictures>
+      <picture>images/4picture1.jpg</picture>
+      <picture>images/4picture2.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/4FlPl1.jpg</fp>
+    </floorPlans>
+  </property>
+  <property type="Residential" uid="5">
+    <title>Fiddler Island, Charleston</title>
+    <address>
+      <street>2100 Fiddler Island Lane</street>
+      <city>Charleston</city>
+      <state>SC</state>
+      <zip>24912</zip>
+    </address>
+    <lease>
+      <perMonth> </perMonth>
+      <perSqFt> </perSqFt>
+    </lease>
+    <features>
+      <f>5.54 acres on the StonoRiver</f>
+      <f>2,531 sf, 4 br/ 4.5 ba</f>
+      <f>minutes to downtown Charleston via land</f>
+      <f>minutes to ocean and intracoastalvia water</f>
+      <f>&#xFFFD;water and marsh views from each room</f>
+      <f>deep water for sport fisherman / yachts</f>
+      <f>mls# 1105975</f>
+      <f>www.fiddlerisland.com</f>
+    </features>
+    <pictures/>
+    <floorPlans/>
+  </property>
+  <property type="Out of Area" uid="6">
+    <title>Extra</title>
+    <address>
+      <street>999 Test Rd</street>
+      <city>Delete Me</city>
+      <state>NC</state>
+      <zip>000000</zip>
+    </address>
+    <lease>
+      <perMonth>n\a</perMonth>
+      <perSqFt>n\a</perSqFt>
+    </lease>
+    <features>
+      <f>n\a</f>
+    </features>
+    <pictures>
+      <picture>images/6picture1.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/6FlPl1.jpg</fp>
+    </floorPlans>
+  </property>
+  <property type="Commercial" uid="7">
+    <title>4</title>
+    <address>
+      <street>1</street>
+      <city>2</city>
+      <state>SC</state>
+      <zip>3</zip>
+    </address>
+    <lease>
+      <perMonth>5</perMonth>
+      <perSqFt>6</perSqFt>
+    </lease>
+    <features>
+      <f>7</f>
+      <f>8</f>
+      <f>9</f>
+    </features>
+    <pictures>
+      <picture>images/7picture1.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/7FlPl1.jpg</fp>
+    </floorPlans>
+  </property>
+  <property type="Commercial" uid="8">
+    <title>title</title>
+    <address>
+      <street>street</street>
+      <city>city</city>
+      <state>SC</state>
+      <zip>111</zip>
+    </address>
+    <lease>
+      <perMonth>perMonth</perMonth>
+      <perSqFt>perSqFt</perSqFt>
+    </lease>
+    <features>
+      <f>111</f>
+    </features>
+    <pictures>
+      <picture>images/8picture1.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/8FlPl1.jpg</fp>
+    </floorPlans>
+  </property>
+  <property type="Residential" uid="9">
+    <title>blah</title>
+    <address>
+      <street>blah</street>
+      <city>extra blah</city>
+      <state>SC</state>
+      <zip>1111</zip>
+    </address>
+    <lease>
+      <perMonth>blah</perMonth>
+      <perSqFt>blah</perSqFt>
+    </lease>
+    <features>
+      <f>blah</f>
+    </features>
+    <pictures>
+      <picture>images/1picture1.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/1FlPl1.jpg</fp>
+    </floorPlans>
+  </property>
+</proprerties>

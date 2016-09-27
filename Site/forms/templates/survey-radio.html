@@ -1,0 +1,505 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Radio Survey Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="What_Stations,How_Often,What_Time,Listen_More_On,I_Listen_To,My_Favorite_Programs,My_Favorite_Songs,Like_Most,Additional_Comments,Name,Email_Address,Security_Code">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table13">
+			<tr>
+				<td width="70%">
+				<p align="right">Please Take Our 
+				Radio Survey&nbsp; </td>
+				<td>
+				&nbsp;&nbsp; <br>
+				&nbsp;
+				<img border="0" src="templates/deco/music-scale.gif" width="67" height="28"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">
+				&nbsp;</td>
+				<td><p align="left">What station(s) do&nbsp;you listen to?</td>
+			</tr>
+			<tr>
+				<td width="20">%%required_image_star%%</td>
+				<td width="20">
+				<p align="right">&nbsp; &nbsp; </td>
+				<td><input name="What_Stations" maxlength="50" size="24" value="%%What_Stations%%">
+				%%What_Stations_Required%%</td>
+			</tr>
+			<tr>
+				<td colspan="3">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+   </table>
+
+   <table border="0" width="100%" %%background_color%% class="verdana" id="table15">
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table16">
+			<tr>
+				<td width="20" valign="top">&nbsp;</td>
+				<td width="20" valign="top">
+				&nbsp;</td>
+				<td colspan="2"><p align="left">
+	How often do you
+				listen to radio?</td>
+			</tr>
+			<tr>
+				<td width="20" valign="top">%%required_image_star%%</td>
+				<td width="20" valign="top">
+				<p align="right">&nbsp;&nbsp; </td>
+				<td><p align="left">
+	<input type="radio" name="How_Often" value="Occasionally" %%How_Often_Occasionally_selected%%>occasionally<br>
+	<input type="radio" name="How_Often" value="Weekdays" %%How_Often_Weekdays_selected%%>weekdays<br>
+	<input type="radio" name="How_Often" value="Weekends" %%How_Often_Weekends_selected%%>weekends<br>
+	<input type="radio" name="How_Often" value="Always" %%How_Often_Always_selected%%></span>always</td>
+				<td>
+				%%How_Often_Required%%</td>
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20" valign="top">
+				&nbsp;</td>
+				<td width="147">
+	&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+   </table>
+  	<table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">
+				&nbsp;</td>
+				<td><p align="left">
+
+				At what time do you&nbsp;listen most often?
+				<br>
+(9-10PM, etc,) &nbsp; </td>
+			</tr>
+			<tr>
+				<td width="20">%%required_image_star%%</td>
+				<td width="20">
+				<p align="right">&nbsp;</td>
+				<td><input name="What_Time" maxlength="50" size="24" value="%%What_Time%%">
+				%%What_Time_Required%%</td>
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">
+				&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    </table>
+  	<table border="0" width="100%" %%background_color%%id="table19">
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table20">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">
+				&nbsp;</td>
+				<td><p align="left">
+	Do You Listen More On:</td>
+			</tr>
+			<tr>
+				<td width="20">%%required_image_star%%</td>
+				<td width="20">
+				&nbsp;</td>
+				<td>
+	<font face="Verdana">
+	<select name='Listen_More_On'>
+	<option value=''></option>
+	<option value='Weekdays' %%Listen_More_On_weekdays_Selected%%>Weekdays</option>
+	<option value='Weekends' %%Listen_More_On_weekends_Selected%%>Weekends</option>
+	<option value='Equally' %%Listen_More_On_equally_Selected%%>Equally</option>
+	</select></font> 
+	%%Listen_More_On_Required%%</td>
+			</tr>
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">
+				&nbsp;</td>
+				<td>
+	&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+   </table>
+	<table border="0" width="100%" %%background_color%% id="table17">
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table18">
+			<tr>
+				<td width="20" valign="top">&nbsp;</td>
+				<td width="20" valign="top">
+				&nbsp;</td>
+				<td colspan="2"><p align="left">
+
+	Check all that apply.&nbsp; <br>
+				I listen to radio:</td>
+			</tr>
+			<tr>
+				<td width="20" valign="top">%%required_image_star%%</td>
+				<td width="20" valign="top">
+				<p align="right">&nbsp;</td>
+				<td><p align="left">
+	<input type="checkbox" name="I_Listen_To_1" value="At_Home" %%I_Listen_To_1_At_Home_selected%%>at 
+	home<br>
+	<input type="checkbox" name="I_Listen_To_2" value="At_Work" %%I_Listen_To_2_At_Work_selected%%>at 
+	work<br>
+	<input type="checkbox" name="I_Listen_To_3" value="In_My_Automobile" %%I_Listen_To_3_In_My_Automobile_selected%%>in 
+	my automobile</td>
+				<td>
+				%%I_Listen_To_Required%%</td>
+			</tr>
+			<tr>
+				<td width="20" valign="top">&nbsp;</td>
+				<td width="20" valign="top">
+				&nbsp;</td>
+				<td>
+	&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+   </table>
+  	<table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">&nbsp;</td>
+				<td><p align="left">
+				My favorite programs are:</td>
+			</tr>
+			<tr>
+				<td width="20">%%required_image_star%%</td>
+				<td width="20">&nbsp;</td>
+				<td>
+				<textarea name="My_Favorite_Programs"  cols="26" rows="2">%%My_Favorite_Programs%%</textarea>
+				%%My_Favorite_Programs_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">&nbsp;</td>
+				<td><p align="left">
+				My favorite songs are:</td>
+			</tr>
+			<tr>
+				<td width="20">%%required_image_star%%</td>
+				<td width="20">&nbsp;</td>
+				<td>
+				<textarea name="My_Favorite_Songs"  cols="26" rows="2">%%My_Favorite_Songs%%</textarea>
+				%%My_Favorite_Songs_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">&nbsp;</td>
+				<td><p align="left">
+				What I like most about
+				your station is:</td>
+			</tr>
+			<tr>
+				<td width="20">%%required_image_star%%</td>
+				<td width="20">&nbsp;</td>
+				<td>
+				<textarea name="Like_Most" cols="26" rows="2">%%Like_Most%%</textarea>
+				%%Like_Most_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="20">&nbsp;</td>
+				<td><p align="left">
+				Additional Comments:</td>
+			</tr>
+			<tr>
+				<td width="20">%%required_image_star%%</td>
+				<td width="20">&nbsp;</td>
+				<td>
+				<textarea name="Additional_Comments"  cols="26" rows="2">%%Additional_Comments%%</textarea>
+				%%Additional_Comments_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="20">&nbsp;</td>
+				<td width="120" align="right">
+				&nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20" height="32">%%required_image_star%%</td>
+				<td width="120" align="right" height="32">
+				<p align="right">Name:&nbsp; </td>
+				<td height="32"><input name="Name" maxlength="50" size="20" value="%%Name%%">
+				%%Name_Required%%</td>
+			</tr>
+			<tr>
+				<td width="20" height="32">&nbsp;</td>
+				<td width="120" align="right" height="32"><p align="right">
+				Age:&nbsp; </td>
+				<td height="32">
+				<input name="Age" maxlength="50" size="20" value="%%Age%%"></td>
+			</tr>
+			<tr>
+				<td width="20" height="32">&nbsp;</td>
+				<td width="120" align="right" height="32"><p align="right">
+				Phone:&nbsp; </td>
+				<td height="32">
+				<input name="Phone" maxlength="50" size="20" value="%%Phone%%"></td>
+			</tr>
+			<tr>
+				<td width="20" height="32">&nbsp;</td>
+				<td width="120" align="right" height="32"><p align="right">
+				City:&nbsp; </td>
+				<td height="32">
+				<input name="City" maxlength="50" size="20" value="%%City%%"></td>
+			</tr>
+			<tr>
+				<td width="20" height="32">&nbsp;</td>
+				<td width="120" align="right" height="32"><p align="right">
+				State/County:&nbsp; </td>
+				<td height="32">
+				<input name="State_County" maxlength="50" size="20" value="%%State_County%%"></td>
+			</tr>
+			<tr>
+				<td width="20" height="32">%%required_image_star%%</td>
+				<td width="120" align="right" height="32"><p align="right">
+				Email:&nbsp; </td>
+				<td height="32">
+				<input name="Email_Address" maxlength="50" size="20" value="%%Email_Address%%"></font> %%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center">
+		<p align="center">&nbsp;Thank you for taking our survey!<br>
+		We appreciate hearing from you!<font size="1"><br>
+&nbsp;</font><br>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

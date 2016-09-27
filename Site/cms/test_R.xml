@@ -1,0 +1,22 @@
+<property type="Commercial" uid="8">
+    <title>title</title>
+    <address>
+      <street>street</street>
+      <city>city</city>
+      <state>SC</state>
+      <zip>111</zip>
+    </address>
+    <lease>
+      <perMonth>perMonth</perMonth>
+      <perSqFt>perSqFt</perSqFt>
+    </lease>
+    <features>
+      <f>111</f>
+    </features>
+    <pictures>
+      <picture>images/8picture1.jpg</picture>
+    </pictures>
+    <floorPlans>
+      <fp>images/8FlPl1.jpg</fp>
+    </floorPlans>
+  </property>

@@ -1,0 +1,711 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Prescription Refill Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Prescription_Number_1,Send,First_Name,Last_Name,Gender,Birth_Month,Birth_Day,Birth_Year,Address,City,State,Zip,Contact_Phone,Email_Address,Shipping_Instructions,Contact_Patient_Via,Payment_Type,Security_Code">
+<input type="hidden" name="Subject" value="Your prescription refill order has been submitted.">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center"><p align="center">Prescription Refill</td>
+    </tr>
+    <tr>
+     <td align="center">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center">&nbsp;<img border="0" src="templates/deco/rx.gif" width="39" height="38"></td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table17">
+			<tr>
+				<td width="105" colspan="2">
+				<p align="right"><u>Prescriptions</u></td>
+				<td>&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="5" height="30">%%required_image_star%%</td>
+				<td width="105" height="30">
+				<p align="right">Number 1:&nbsp; </td>
+				<td height="30"><input name="Prescription_Number_1" maxlength="50" size="20" value="%%Prescription_Number_1%%">
+				%%Prescription_Number_1_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5" height="30">&nbsp;</td>
+				<td width="105" height="30"><p align="right">
+				&nbsp;Number 2:&nbsp; </td>
+				<td height="30"><input name="Prescription_Number_2" maxlength="50" size="20" value="%%Prescription_Number_2%%"></td>
+			</tr>
+			<tr>
+				<td width="5" height="30">&nbsp;</td>
+				<td width="105" height="30"><p align="right">
+				Number 3:&nbsp; </td>
+				<td height="30"><input name="Prescription_Number_3" maxlength="50" size="20" value="%%Prescription_Number_3%%"></td>
+			</tr>
+			<tr>
+				<td width="5" height="30">&nbsp;</td>
+				<td width="105" height="30"><p align="right">
+				Number 4:&nbsp; </td>
+				<td height="30"><input name="Prescription_Number_4" maxlength="50" size="20" value="%%Prescription_Number_4%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table21">
+					<tr>
+     <td align="right" valign="top" rowspan="2" nowrap width="70"><p align="right">
+		Choose&nbsp; </td><td width="150">
+		<p align="left">
+		<input type="radio" name="Send" value="No" %%Send_No_Selected%% checked>
+		Pick-Up</td>
+		<td valign="top" width="187">
+		%%Send_Required%%</td>
+    						</tr>
+					<tr>
+     <td width="150"><p align="left">
+		<input type="radio" name="Send" value="Yes" %%Send_Yes_Selected%%> 
+		Please Send</td>
+		<td width="187"></td>
+    						</tr>
+					</table></td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><b>&nbsp;&nbsp;&nbsp; <u>Patient Information</u></b>:</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">First Name:&nbsp; </td>
+				<td><input name="First_Name" maxlength="50" size="20" value="%%First_Name%%">
+				%%First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table4">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Last Name:&nbsp; </td>
+				<td><input name="Last_Name" maxlength="50" size="20" value="%%Last_Name%%">
+				%%Last_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table5">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Gender:&nbsp; </td>
+				<td><p align="left">
+				<input type="radio" name="Gender" value="M" %%M_Selected%%> Male 
+				<input type="radio" name="Gender" value="F" %%F_Selected%%> Female  %%Gender_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table6">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Birth Date:&nbsp;<br><font size="1">(MM-DD-YYYY)&nbsp;</font></td>
+				<td>
+	<font face="Verdana">
+	<select name='Birth_Month'>
+	<option value=''></option>
+	<option value='01' %%Birth_Month_01_Selected%%>01</option>
+	<option value='02' %%Birth_Month_02_Selected%%>02</option>
+	<option value='03' %%Birth_Month_03_Selected%%>03</option>
+	<option value='04' %%Birth_Month_04_Selected%%>04</option>
+	<option value='05' %%Birth_Month_05_Selected%%>05</option>
+	<option value='06' %%Birth_Month_06_Selected%%>06</option>
+	<option value='07' %%Birth_Month_07_Selected%%>07</option>
+	<option value='08' %%Birth_Month_08_Selected%%>08</option>
+	<option value='09' %%Birth_Month_09_Selected%%>09</option>
+	<option value='10' %%Birth_Month_10_Selected%%>10</option>
+	<option value='11' %%Birth_Month_11_Selected%%>11</option>
+	<option value='12' %%Birth_Month_12_Selected%%>12</option>
+	</select></font>
+  	<font face="Verdana">
+
+	<select name='Birth_Day'>
+	<option value=''></option>
+	<option value='01' %%Birth_Day_01_Selected%%>01</option>
+	<option value='02' %%Birth_Day_02_Selected%%>02</option>
+	<option value='03' %%Birth_Day_03_Selected%%>03</option>
+	<option value='04' %%Birth_Day_04_Selected%%>04</option>
+	<option value='05' %%Birth_Day_05_Selected%%>05</option>
+	<option value='06' %%Birth_Day_06_Selected%%>06</option>
+	<option value='07' %%Birth_Day_07_Selected%%>07</option>
+	<option value='08' %%Birth_Day_08_Selected%%>08</option>
+	<option value='09' %%Birth_Day_09_Selected%%>09</option>
+	<option value='10' %%Birth_Day_10_Selected%%>10</option>
+	<option value='11' %%Birth_Day_11_Selected%%>11</option>
+	<option value='12' %%Birth_Day_12_Selected%%>12</option>
+	<option value='13' %%Birth_Day_13_Selected%%>13</option>
+	<option value='14' %%Birth_Day_14_Selected%%>14</option>
+	<option value='15' %%Birth_Day_15_Selected%%>15</option>
+	<option value='16' %%Birth_Day_16_Selected%%>16</option>
+	<option value='17' %%Birth_Day_17_Selected%%>17</option>
+	<option value='18' %%Birth_Day_18_Selected%%>18</option>
+	<option value='19' %%Birth_Day_19_Selected%%>19</option>
+	<option value='20' %%Birth_Day_20_Selected%%>20</option>
+	<option value='21' %%Birth_Day_21_Selected%%>21</option>
+	<option value='22' %%Birth_Day_22_Selected%%>22</option>
+	<option value='23' %%Birth_Day_23_Selected%%>23</option>
+	<option value='24' %%Birth_Day_24_Selected%%>24</option>
+	<option value='25' %%Birth_Day_25_Selected%%>25</option>
+	<option value='26' %%Birth_Day_26_Selected%%>26</option>
+	<option value='27' %%Birth_Day_27_Selected%%>27</option>
+	<option value='28' %%Birth_Day_28_Selected%%>28</option>
+	<option value='29' %%Birth_Day_29_Selected%%>29</option>
+	<option value='30' %%Birth_Day_30_Selected%%>30</option>
+	<option value='31' %%Birth_Day_31_Selected%%>31</option>
+	</select>
+
+	<select name='Birth_Year'>
+	<option value=''></option>
+	<option value='1900' %%Birth_Year_1900_Selected%%>1900</option>
+	<option value='1901' %%Birth_Year_1901_Selected%%>1901</option>
+	<option value='1902' %%Birth_Year_1902_Selected%%>1902</option>
+	<option value='1903' %%Birth_Year_1903_Selected%%>1903</option>
+	<option value='1904' %%Birth_Year_1904_Selected%%>1904</option>
+	<option value='1905' %%Birth_Year_1905_Selected%%>1905</option>
+	<option value='1906' %%Birth_Year_1906_Selected%%>1906</option>
+	<option value='1907' %%Birth_Year_1907_Selected%%>1907</option>
+	<option value='1908' %%Birth_Year_1908_Selected%%>1908</option>
+	<option value='1909' %%Birth_Year_1909_Selected%%>1909</option>
+	<option value='1910' %%Birth_Year_1910_Selected%%>1910</option>
+	<option value='1911' %%Birth_Year_1911_Selected%%>1911</option>
+	<option value='1912' %%Birth_Year_1912_Selected%%>1912</option>
+	<option value='1913' %%Birth_Year_1913_Selected%%>1913</option>
+	<option value='1914' %%Birth_Year_1914_Selected%%>1914</option>
+	<option value='1915' %%Birth_Year_1915_Selected%%>1915</option>
+	<option value='1916' %%Birth_Year_1916_Selected%%>1916</option>
+	<option value='1917' %%Birth_Year_1917_Selected%%>1917</option>
+	<option value='1918' %%Birth_Year_1918_Selected%%>1918</option>
+	<option value='1919' %%Birth_Year_1919_Selected%%>1919</option>
+	<option value='1920' %%Birth_Year_1920_Selected%%>1920</option>
+	<option value='1921' %%Birth_Year_1921_Selected%%>1921</option>
+	<option value='1922' %%Birth_Year_1922_Selected%%>1922</option>
+	<option value='1923' %%Birth_Year_1923_Selected%%>1923</option>
+	<option value='1924' %%Birth_Year_1924_Selected%%>1924</option>
+	<option value='1925' %%Birth_Year_1925_Selected%%>1925</option>
+	<option value='1926' %%Birth_Year_1926_Selected%%>1926</option>
+	<option value='1927' %%Birth_Year_1927_Selected%%>1927</option>
+	<option value='1928' %%Birth_Year_1928_Selected%%>1928</option>
+	<option value='1929' %%Birth_Year_1929_Selected%%>1929</option>
+	<option value='1930' %%Birth_Year_1930_Selected%%>1930</option>
+	<option value='1931' %%Birth_Year_1931_Selected%%>1931</option>
+	<option value='1932' %%Birth_Year_1932_Selected%%>1932</option>
+	<option value='1933' %%Birth_Year_1933_Selected%%>1933</option>
+	<option value='1934' %%Birth_Year_1934_Selected%%>1934</option>
+	<option value='1935' %%Birth_Year_1935_Selected%%>1935</option>
+	<option value='1936' %%Birth_Year_1936_Selected%%>1936</option>
+	<option value='1937' %%Birth_Year_1937_Selected%%>1937</option>
+	<option value='1938' %%Birth_Year_1938_Selected%%>1938</option>
+	<option value='1939' %%Birth_Year_1939_Selected%%>1939</option>
+	<option value='1940' %%Birth_Year_1940_Selected%%>1940</option>
+	<option value='1941' %%Birth_Year_1941_Selected%%>1941</option>
+	<option value='1942' %%Birth_Year_1942_Selected%%>1942</option>
+	<option value='1943' %%Birth_Year_1943_Selected%%>1943</option>
+	<option value='1944' %%Birth_Year_1944_Selected%%>1944</option>
+	<option value='1945' %%Birth_Year_1945_Selected%%>1945</option>
+	<option value='1946' %%Birth_Year_1946_Selected%%>1946</option>
+	<option value='1947' %%Birth_Year_1947_Selected%%>1947</option>
+	<option value='1948' %%Birth_Year_1948_Selected%%>1948</option>
+	<option value='1949' %%Birth_Year_1949_Selected%%>1949</option>
+	<option value='1950' %%Birth_Year_1950_Selected%%>1950</option>
+	<option value='1951' %%Birth_Year_1951_Selected%%>1951</option>
+	<option value='1952' %%Birth_Year_1952_Selected%%>1952</option>
+	<option value='1953' %%Birth_Year_1953_Selected%%>1953</option>
+	<option value='1954' %%Birth_Year_1954_Selected%%>1954</option>
+	<option value='1955' %%Birth_Year_1955_Selected%%>1955</option>
+	<option value='1956' %%Birth_Year_1956_Selected%%>1956</option>
+	<option value='1957' %%Birth_Year_1957_Selected%%>1957</option>
+	<option value='1958' %%Birth_Year_1958_Selected%%>1958</option>
+	<option value='1959' %%Birth_Year_1959_Selected%%>1959</option>
+	<option value='1960' %%Birth_Year_1960_Selected%%>1960</option>
+	<option value='1961' %%Birth_Year_1961_Selected%%>1961</option>
+	<option value='1962' %%Birth_Year_1962_Selected%%>1962</option>
+	<option value='1963' %%Birth_Year_1963_Selected%%>1963</option>
+	<option value='1964' %%Birth_Year_1964_Selected%%>1964</option>
+	<option value='1965' %%Birth_Year_1965_Selected%%>1965</option>
+	<option value='1966' %%Birth_Year_1966_Selected%%>1966</option>
+	<option value='1967' %%Birth_Year_1967_Selected%%>1967</option>
+	<option value='1968' %%Birth_Year_1968_Selected%%>1968</option>
+	<option value='1969' %%Birth_Year_1969_Selected%%>1969</option>
+	<option value='1970' %%Birth_Year_1970_Selected%%>1970</option>
+	<option value='1971' %%Birth_Year_1971_Selected%%>1971</option>
+	<option value='1972' %%Birth_Year_1972_Selected%%>1972</option>
+	<option value='1973' %%Birth_Year_1973_Selected%%>1973</option>
+	<option value='1974' %%Birth_Year_1974_Selected%%>1974</option>
+	<option value='1975' %%Birth_Year_1975_Selected%%>1975</option>
+	<option value='1976' %%Birth_Year_1976_Selected%%>1976</option>
+	<option value='1977' %%Birth_Year_1977_Selected%%>1977</option>
+	<option value='1978' %%Birth_Year_1978_Selected%%>1978</option>
+	<option value='1979' %%Birth_Year_1979_Selected%%>1979</option>
+	<option value='1980' %%Birth_Year_1980_Selected%%>1980</option>
+	<option value='1981' %%Birth_Year_1981_Selected%%>1981</option>
+	<option value='1982' %%Birth_Year_1982_Selected%%>1982</option>
+	<option value='1983' %%Birth_Year_1983_Selected%%>1983</option>
+	<option value='1984' %%Birth_Year_1984_Selected%%>1984</option>
+	<option value='1985' %%Birth_Year_1985_Selected%%>1985</option>
+	<option value='1986' %%Birth_Year_1986_Selected%%>1986</option>
+	<option value='1987' %%Birth_Year_1987_Selected%%>1987</option>
+	<option value='1988' %%Birth_Year_1988_Selected%%>1988</option>
+	<option value='1989' %%Birth_Year_1989_Selected%%>1989</option>
+	<option value='1990' %%Birth_Year_1990_Selected%%>1990</option>
+	<option value='1991' %%Birth_Year_1991_Selected%%>1991</option>
+	<option value='1992' %%Birth_Year_1992_Selected%%>1992</option>
+	<option value='1993' %%Birth_Year_1993_Selected%%>1993</option>
+	<option value='1994' %%Birth_Year_1994_Selected%%>1994</option>
+	<option value='1995' %%Birth_Year_1995_Selected%%>1995</option>
+	<option value='1996' %%Birth_Year_1996_Selected%%>1996</option>
+		<option value='1997' %%Birth_Year_1997_Selected%%>1997</option>
+	<option value='1998' %%Birth_Year_1998_Selected%%>1998</option>
+	<option value='1999' %%Birth_Year_1999_Selected%%>1999</option>
+	<option value='2000' %%Birth_Year_2000_Selected%%>2000</option>
+	<option value='2001' %%Birth_Year_2001_Selected%%>2001</option>
+	<option value='2002' %%Birth_Year_2002_Selected%%>2002</option>
+	<option value='2003' %%Birth_Year_2003_Selected%%>2003</option>
+	<option value='2004' %%Birth_Year_2004_Selected%%>2004</option>
+	<option value='2005' %%Birth_Year_2005_Selected%%>2005</option>
+	<option value='2006' %%Birth_Year_2006_Selected%%>2006</option>
+	<option value='2007' %%Birth_Year_2007_Selected%%>2007</option>
+	<option value='2008' %%Birth_Year_2008_Selected%%>2008</option>
+	</select></font>
+  	%%Birth_Date_Required%%
+  </td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Address:&nbsp; </td>
+				<td><input name="Address" maxlength="50" size="20" value="%%Address%%">
+				%%Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">City:&nbsp; </td>
+				<td><input name="City" maxlength="50" size="20" value="%%City%%">
+				%%City_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">State:&nbsp; </td>
+				<td><font face="Verdana"><select name="State">
+   <option value=""></option>
+   <option value="AL" %%AL_Selected%%>Alabama</option>
+   <option value="AK" %%AK_Selected%%>Alaska</option>
+   <option value="AZ" %%AZ_Selected%%>Arizona</option>
+   <option value="AR" %%AR_Selected%%>Arkansas</option>
+   <option value="CA" %%CA_Selected%%>California</option>
+   <option value="CO" %%CO_Selected%%>Colorado</option>
+   <option value="CT" %%CT_Selected%%>Connecticut</option>
+   <option value="DC" %%DC_Selected%%>District of Columbia</option>
+   <option value="DE" %%DE_Selected%%>Delaware</option>
+   <option value="FL" %%FL_Selected%%>Florida</option>
+   <option value="GA" %%GA_Selected%%>Georgia</option>
+   <option value="HI" %%HI_Selected%%>Hawaii</option>
+   <option value="ID" %%ID_Selected%%>Idaho</option>
+   <option value="IL" %%IL_Selected%%>Illinois</option>
+   <option value="IN" %%IN_Selected%%>Indiana</option>
+   <option value="IA" %%IA_Selected%%>Iowa</option>
+   <option value="KS" %%KS_Selected%%>Kansas</option>
+   <option value="KY" %%KY_Selected%%>Kentucky</option>
+   <option value="LA" %%LA_Selected%%>Louisiana</option>
+   <option value="ME" %%ME_Selected%%>Maine</option>
+   <option value="MD" %%MD_Selected%%>Maryland</option>
+   <option value="MA" %%MA_Selected%%>Massachusetts</option>
+   <option value="MI" %%MI_Selected%%>Michigan</option>
+   <option value="MN" %%MN_Selected%%>Minnesota</option>
+   <option value="MS" %%MS_Selected%%>Mississippi</option>
+   <option value="MO" %%MO_Selected%%>Missouri</option>
+   <option value="MT" %%MT_Selected%%>Montana</option>
+   <option value="NE" %%NE_Selected%%>Nebraska</option>
+   <option value="NV" %%NV_Selected%%>Nevada</option>
+   <option value="NH" %%NH_Selected%%>New Hampshire</option>
+   <option value="NJ" %%NJ_Selected%%>New Jersey</option>
+   <option value="NM" %%NM_Selected%%>New Mexico</option>
+   <option value="NY" %%NY_Selected%%>New York</option>
+   <option value="NC" %%NC_Selected%%>North Carolina</option>
+   <option value="ND" %%ND_Selected%%>North Dakota</option>
+   <option value="OH" %%OH_Selected%%>Ohio</option>
+   <option value="OK" %%OK_Selected%%>Oklahoma</option>
+   <option value="OR" %%OR_Selected%%>Oregon</option>
+   <option value="PA" %%PA_Selected%%>Pennsylvania</option>
+   <option value="PR" %%PR_Selected%%>Puerto Rico</option>
+   <option value="RI" %%RI_Selected%%>Rhode Island</option>
+   <option value="SC" %%SC_Selected%%>South Carolina</option>
+   <option value="SD" %%SD_Selected%%>South Dakota</option>
+   <option value="TN" %%TN_Selected%%>Tennessee</option>
+   <option value="TX" %%TX_Selected%%>Texas</option>
+   <option value="UT" %%UT_Selected%%>Utah</option>
+   <option value="VT" %%VT_Selected%%>Vermont</option>
+   <option value="VA" %%VA_Selected%%>Virginia</option>
+   <option value="WA" %%WA_Selected%%>Washington</option>
+   <option value="WV" %%WV_Selected%%>West Virginia</option>
+   <option value="WI" %%WI_Selected%%>Wisconsin</option>
+   <option value="WY" %%WY_Selected%%>Wyoming</option>
+  </select></font>
+  %%State_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Zip:&nbsp; </td>
+				<td><input name="Zip" maxlength="50" size="15" value="%%Zip%%">
+				%%Zip_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table14">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Contact phone:&nbsp; </td>
+				<td><input name="Contact_Phone" maxlength="50" size="20" value="%%Contact_Phone%%">
+				%%Contact_Phone_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table15">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Email:&nbsp; </td>
+				<td><input name="Email_Address" maxlength="50" size="20" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="70">&nbsp;</td>
+				<td><p align="left">Shipping Options</td>
+			</tr>
+			<tr>
+				<td width="70">%%required_image_star%%</td>
+				<td><font face="Verdana">
+				<select name='Shipping_Instructions'>
+				<option value=''></option>
+                <option value='UPS_3_Day_Air_Standard' %%Shipping_Instructions_UPS_3_Day_Air_Standard_Selected%%>UPS 3 Day Air - Standard</option>
+                <option value='UPS_Ground_Service' %%Shipping_Instructions_UPS_Ground_Service_Selected%%>UPS Ground Service</option>
+                <option value='UPS_2_Day_Air' %%Shipping_Instructions_UPS_2_Day_Air_Selected%%>UPS 2 Day Air</option>
+                <option value='UPS_Overnight' %%Shipping_Instructions_UPS_Overnight_Selected%%>UPS Overnight</option>
+                </select></font>
+                %%Shipping_Instructions_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="70">&nbsp;</td>
+				<td><p align="left">&nbsp;<br>
+				Please indicate how we<br>
+				should 
+				inform you of
+				the <br>
+				fulfillment of your refill order.</td>
+			</tr>
+			<tr>
+				<td width="70">%%required_image_star%%</td>
+				<td><font face="Verdana">
+				<select name='Contact_Patient_Via'>
+				<option value=''></option>
+				<option value='E_Mail' %%Contact_Patient_Via_E_Mail_Selected%%>E-Mail</option>
+                <option value='Invoice_on_the_shipment' %%Contact_Patient_Via_Invoice_on_the_shipment_Selected%%>Invoice on the shipment</option>
+                <option value='Telephone' %%Contact_Patient_Via_Telephone_Selected%%>Telephone</option>
+                <option value='FAX' %%Contact_Patient_Via_FAX_Selected%%>FAX</option>
+                </select></font>
+                %%Contact_Patient_Via_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="70">&nbsp;</td>
+				<td><p align="left">&nbsp;<br>
+				Please charge my credit card 
+				<br>
+				as previously provided:</td>
+			</tr>
+			<tr>
+				<td width="70">%%required_image_star%%</td>
+				<td><font face="Verdana">
+				<select name='Payment_Type'>
+				<option value=''></option>
+                <option value='VISA' %%Payment_Type_VISA_Selected%%>VISA</option>
+                <option value='Master_Card' %%Payment_Type_Master_Card_Selected%%>Master Card</option>
+                <option value='Discovery' %%Payment_Type_Discovery_Selected%%>Discovery</option>
+                <option value='American Express' %%Payment_Type_American Express_Selected%%>American Express</option>
+                </select></font>
+                %%Payment_Type_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table16">
+			<tr>
+				<td width="50">&nbsp;</td>
+				<td colspan="3"><p align="left">
+				&nbsp;<br>
+				Comments, or a <br>
+				different shipping address:</td>
+			</tr>
+			<tr>
+				<td width="50" colspan="2"><p align="right">
+				&nbsp; </td>
+				<td>
+				<textarea name="Comments"  cols="28" rows="6">%%Comments%%</textarea></td>
+				<td valign="top"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<p align="left"><font size="1">&nbsp;</font><a href="javascript:privacy(1)"><font size="1">Privacy Policy</font></a></td>
+    </tr>
+
+    <tr>
+     <td align="center"><p align="center">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

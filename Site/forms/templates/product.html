@@ -1,0 +1,404 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Product Order Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Product_Name,Product_Quantity,First_Name,Last_Name,Address,City,State,Zip,Country,Email_Address,Security_Code">
+<input type="hidden" name="Subject" value="%%subject_hidden_field%%">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">Product Order Form</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Product Name:&nbsp; </td>
+				<td><input name="Product_Name" maxlength="50" size="20" value="%%Product_Name%%">
+				%%Product_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table3">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Quantity:&nbsp; </td>
+				<td><input name="Product_Quantity" maxlength="50" size="10" value="%%Product_Quantity%%">
+				%%Product_Quantity_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center"><b>Customer Information</b>:</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table7">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">First Name:&nbsp; </td>
+				<td><input name="First_Name" maxlength="50" size="20" value="%%First_Name%%">
+				%%First_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table8">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Last Name:&nbsp; </td>
+				<td><input name="Last_Name" maxlength="50" size="20" value="%%Last_Name%%">
+				%%Last_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Address:&nbsp; </td>
+				<td><input name="Address" maxlength="50" size="20" value="%%Address%%">
+				%%Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">City:&nbsp; </td>
+				<td><input name="City" maxlength="50" size="20" value="%%City%%">
+				%%City_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table11">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">State:&nbsp; </td>
+				<td><font face="Verdana"><select name="State">
+   <option value=""></option>
+   <option value="AL" %%AL_Selected%%>Alabama</option>
+   <option value="AK" %%AK_Selected%%>Alaska</option>
+   <option value="AZ" %%AZ_Selected%%>Arizona</option>
+   <option value="AR" %%AR_Selected%%>Arkansas</option>
+   <option value="CA" %%CA_Selected%%>California</option>
+   <option value="CO" %%CO_Selected%%>Colorado</option>
+   <option value="CT" %%CT_Selected%%>Connecticut</option>
+   <option value="DC" %%DC_Selected%%>District of Columbia</option>
+   <option value="DE" %%DE_Selected%%>Delaware</option>
+   <option value="FL" %%FL_Selected%%>Florida</option>
+   <option value="GA" %%GA_Selected%%>Georgia</option>
+   <option value="HI" %%HI_Selected%%>Hawaii</option>
+   <option value="ID" %%ID_Selected%%>Idaho</option>
+   <option value="IL" %%IL_Selected%%>Illinois</option>
+   <option value="IN" %%IN_Selected%%>Indiana</option>
+   <option value="IA" %%IA_Selected%%>Iowa</option>
+   <option value="KS" %%KS_Selected%%>Kansas</option>
+   <option value="KY" %%KY_Selected%%>Kentucky</option>
+   <option value="LA" %%LA_Selected%%>Louisiana</option>
+   <option value="ME" %%ME_Selected%%>Maine</option>
+   <option value="MD" %%MD_Selected%%>Maryland</option>
+   <option value="MA" %%MA_Selected%%>Massachusetts</option>
+   <option value="MI" %%MI_Selected%%>Michigan</option>
+   <option value="MN" %%MN_Selected%%>Minnesota</option>
+   <option value="MS" %%MS_Selected%%>Mississippi</option>
+   <option value="MO" %%MO_Selected%%>Missouri</option>
+   <option value="MT" %%MT_Selected%%>Montana</option>
+   <option value="NE" %%NE_Selected%%>Nebraska</option>
+   <option value="NV" %%NV_Selected%%>Nevada</option>
+   <option value="NH" %%NH_Selected%%>New Hampshire</option>
+   <option value="NJ" %%NJ_Selected%%>New Jersey</option>
+   <option value="NM" %%NM_Selected%%>New Mexico</option>
+   <option value="NY" %%NY_Selected%%>New York</option>
+   <option value="NC" %%NC_Selected%%>North Carolina</option>
+   <option value="ND" %%ND_Selected%%>North Dakota</option>
+   <option value="OH" %%OH_Selected%%>Ohio</option>
+   <option value="OK" %%OK_Selected%%>Oklahoma</option>
+   <option value="OR" %%OR_Selected%%>Oregon</option>
+   <option value="PA" %%PA_Selected%%>Pennsylvania</option>
+   <option value="PR" %%PR_Selected%%>Puerto Rico</option>
+   <option value="RI" %%RI_Selected%%>Rhode Island</option>
+   <option value="SC" %%SC_Selected%%>South Carolina</option>
+   <option value="SD" %%SD_Selected%%>South Dakota</option>
+   <option value="TN" %%TN_Selected%%>Tennessee</option>
+   <option value="TX" %%TX_Selected%%>Texas</option>
+   <option value="UT" %%UT_Selected%%>Utah</option>
+   <option value="VT" %%VT_Selected%%>Vermont</option>
+   <option value="VA" %%VA_Selected%%>Virginia</option>
+   <option value="WA" %%WA_Selected%%>Washington</option>
+   <option value="WV" %%WV_Selected%%>West Virginia</option>
+   <option value="WI" %%WI_Selected%%>Wisconsin</option>
+   <option value="WY" %%WY_Selected%%>Wyoming</option>
+  </select></font>
+  %%State_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table12">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Zip:&nbsp; </td>
+				<td><input name="Zip" maxlength="50" size="12" value="%%Zip%%">
+				%%Zip_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table13">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Country:&nbsp; </td>
+				<td><input name="Country" maxlength="50" size="20" value="%%Country%%">
+				%%Country_Required%%</td>
+			</tr>
+			<tr>
+				<td width="5" height="32">&nbsp;</td>
+				<td width="120" height="32">
+				<p align="right">Phone:&nbsp;
+				</td>
+				<td height="32">
+<font face="Verdana">
+				<input name="Contact_Phone" maxlength="50" size="20" value="%%Contact_Phone%%"></td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table25">
+			<tr>
+				<td width="5"></td>
+				<td width="125">
+				<p align="right">&nbsp; </td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table14">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="120">
+				<p align="right">Email:&nbsp; </td>
+				<td><input name="Email_Address" maxlength="50" size="20" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="right">&nbsp;</td><td>&nbsp;</td><td></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="2"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<p align="left"><font size="1">&nbsp;<a href="javascript:privacy(1)">Privacy Policy</a></font></font></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>

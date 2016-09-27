@@ -1,0 +1,401 @@
+<!--
+ * (C) Copyright 2008 BestWebForms.com
+ * For information visit http://www.bestwebforms.com/
+ * All rights reserved. Used only by permission under license agreement.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+
+<title>Product Order Form</title>
+<meta name="description" content="description.">
+<meta name="keywords" content="keywords">
+<META NAME="MSSmartTagsPreventParsing" content="TRUE">
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<script language="Javascript">
+
+<!--
+function privacy(arg){
+	var wn=window.open("./templates/windowopen.php?privacyid="+arg,"","resizable=yes,width=530,height=400,scrollbars=yes,top=0,left=0");
+	wn.focus();
+}
+
+
+//-->
+</script>
+
+<style type="text/css"> 
+body {background-color: %%iframe_background_color%%} 
+</style>
+
+<style type="text/css"> 
+body {color: %%text_color%%} 
+</style>
+
+<style type="text/css"> 
+body {font-family: %%font_style%%} 
+</style>
+
+<style type="text/css"> 
+body
+p
+{font-size: %%text_size%%}
+ 
+</style>
+
+<script language="JavaScript" src="./ts_picker.js">
+
+
+</script>
+
+</head>
+
+<body>
+
+%%header%%
+
+<center>
+
+<div>
+
+<br>
+<p>
+
+<table cellSpacing="0" cellPadding="0" width="375" id="table1">
+
+<form name="form" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="f" value="%%form_to_use%%">
+<input type="hidden" name="required_fields" value="Item_Product_Number,Item_Product_Name,Product_Quantity,Color_Desired,Number_of_Imprint_Colors,Event_Need_Date,Name,Email_Address,How_did_you_find_us,Security_Code">
+<input type="hidden" name="Subject" value="Product Inquiry">
+
+ <tr>
+  <td>%%top_left%%</td>
+  <td %%top_bar%%>&nbsp;</td>
+  <td>%%top_right%%</td>
+ </tr>
+ <tr>
+  <td %%left_bar%%>&nbsp;</td>
+  <td style="width: 100%; background-color: #ffffff">
+
+</font>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="1" %%border_color%%>
+ <tr>
+  <td>
+
+   <table border="0" width="100%" %%background_color%%>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">Product Info</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">%%missing_fields_message%%</td>
+    </tr>
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="150">
+				<p align="right">Item/Product #:&nbsp; </td>
+				<td>
+				<input name="Item_Product_Number" maxlength="50" size="16" value="%%Item_Product_Number%%">
+				%%Item_Product_Number_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table2">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="150">
+				<p align="right">Item/Product Name:&nbsp; </td>
+				<td>
+				<input name="Item_Product_Name" maxlength="50" size="16" value="%%Item_Product_Name%%">
+				%%Item_Product_Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table3">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="150">
+				<p align="right">Quantity Desired:&nbsp; </td>
+				<td><input name="Product_Quantity" maxlength="50" size="10" value="%%Product_Quantity%%">
+				%%Product_Quantity_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table3">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="150">
+				<p align="right">Color Desired:&nbsp; </td>
+				<td>
+				<input name="Color_Desired" maxlength="50" size="16" value="%%Color_Desired%%">
+				%%Color_Desired_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table3">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="150">
+				<p align="right"># of Imprint Colors:&nbsp; </td>
+				<td><input name="Number_of_Imprint_Colors" maxlength="50" size="10" value="%%Number_of_Imprint_Colors%%">
+				%%Number_of_Imprint_Colors_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+    
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table28">
+			<tr>
+				<td valign="top" width="30">&nbsp;</td>
+				<td><p align="left">
+      &nbsp;<br>
+		Imprint Instructions?</td>
+			</tr>
+			<tr>
+				<td valign="top" width="30">&nbsp;<p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table29">
+       <tr>
+        <td><textarea name="Imprint_Instructions"  cols="30" rows="8">%%Imprint_Instructions%%</textarea></td>
+        <td valign="top">
+        &nbsp;</td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    		</tr>
+			<tr>
+				<td>
+				<p align="center">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table10">
+			<tr>
+				<td width="10">%%required_image_star%%</td>
+				<td width="145">
+				<p align="right">Event Need Date:&nbsp; </td>
+				<td>
+				<input name="Event_Need_Date" maxlength="50" size="10" value="%%Event_Need_Date%%"> <a href="javascript:show_calendar('document.forms[0].Event_Need_Date', document.forms[0].Event_Need_Date.value);">
+				<img src="templates/deco/cal.gif" width="16" height="16" border="0" alt="Click Here to Pick the Date"></a>
+				%%Event_Need_Date_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+<tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table26">
+			<tr>
+	<td valign="top">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table28">
+			<tr>
+				<td valign="top" width="30">&nbsp;</td>
+				<td><p align="left">
+      &nbsp;<br>
+		Additional Information?</td>
+			</tr>
+			<tr>
+				<td valign="top" width="30">&nbsp;<p align="right">
+				&nbsp; </td>
+				<td>
+      <table border="0" cellpadding="0" cellspacing="0" id="table29">
+       <tr>
+        <td><textarea name="Additional_Information"  cols="30" rows="8">%%Additional_Information%%</textarea></td>
+        <td valign="top">
+        &nbsp;</td>
+       </tr>
+      </table>
+     			</td>
+			</tr>
+		</table>
+		</td>
+    		</tr>
+			<tr>
+				<td>
+				<p align="center">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table136">
+			<tr>
+				<td width="5">&nbsp;</td>
+				<td width="100">
+				&nbsp;</td>
+				<td><p align="left">
+	How did you find us?</td>
+			</tr>
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">&nbsp; </td>
+				<td>
+	<select name='How_did_you_find_us'>
+	<option value=''></option>
+	<option value='Web_-_Search_Engine' %%How_did_you_find_us_Web_-_Search_Engine_Selected%%>Web - Search Engine</option>
+	<option value='Web_Advertisement' %%How_did_you_find_us_Web_Advertisement_Selected%%>Web Advertisement</option>
+	<option value='A_Blog_or_Forum' %%How_did_you_find_us_A_Blog_or_Forum_Selected%%>A Blog or Forum</option>
+	<option value='Friend' %%How_did_you_find_us_Friend_Selected%%>Friend</option>
+	<option value='Other' %%How_did_you_find_us_Other_Selected%%>Other</option>
+	</select>
+	%%How_did_you_find_us_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table9">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Name:&nbsp; </td>
+				<td>
+				<input name="Name" maxlength="50" size="24" value="%%Name%%">
+				%%Name_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<table border="0" cellpadding="0" cellspacing="0" width="100%" id="table14">
+			<tr>
+				<td width="5">%%required_image_star%%</td>
+				<td width="100">
+				<p align="right">Email:&nbsp; </td>
+				<td>
+				<input name="Email_Address" maxlength="50" size="24" value="%%Email_Address%%">
+				%%Email_Address_Required%%</td>
+			</tr>
+		</table>
+		</td>
+    </tr>
+
+    <tr>
+     <td align="right">&nbsp;</td><td>&nbsp;</td><td></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="2"><p align="center"><input type=checkbox name="Send_To_Me" value="Yes" %%Send_To_Me_Yes_Selected%%> 
+		Send me a copy</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">%%Security_Code_HTML%%</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3"><font face="Verdana"><input type="submit" value="Send"></font></td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3"><p align="center">%%required_image_msg%%</td>
+    </tr>
+
+    <tr>
+      <td align="center" colspan="3">&nbsp;</td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+		<p align="left"><font size="1">&nbsp;<a href="javascript:privacy(1)">Privacy Policy</a></font></font></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="3">
+<!-- Please do not delete the below link to BestWebForms.com. We find that having the link on the form 
+gives the sender of the email more confidence and security of mind, plus it is in the license agreement.
+Thank you.-->
+		<br>
+		<font size="1">Powered by
+		</font>
+		<a target="window.open" href="http://www.bestwebforms.com/index.php">
+		<font size="1">Web Forms 3.0</font></a></td>
+    </tr>
+
+   </table>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</td>
+
+  <td %%right_bar%%>&nbsp;</td>
+ </tr>
+ <tr>
+  <td>%%btm_left%%</td>
+  <td %%btm_bar%%>&nbsp;</td>
+  <td>%%btm_right%%</td>
+ </tr>
+ </form>
+</table>
+
+</p>
+
+</div>
+
+</center>
+
+%%footer%%
+
+</body>
+</html>
